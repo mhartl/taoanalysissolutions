@@ -4,7 +4,7 @@
 % General packages:
 \usepackage{a4wide}
 \usepackage[english]{babel}
-\usepackage[utf8]{inputenc} 
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
 \titlelabel{\thetitle.\quad}
@@ -70,11 +70,11 @@ No exercises in this chapter.
 \section{Starting at the beginning: the natural numbers}
 \label{sec:natural-numbers}
 
-\begin{exo}{2.2.1}{Prove that the addition is associative, i.e. that
+\begin{exo}{2.2.1}{Prove that the addition is associative, i.e., that
     for any natural numbers $a, b, c$, we have $(a+b) + c = a + (b+c)$.}
 
   Let's use induction on $a$ while keeping $b$ and $c$ fixed.
-  
+
   \begin{itemize}
   \item Base case for $a=0$: let's prove that $(0+b)+c = 0+(b+c)$. For
     the left hand side, we have $(0+b)=b$ by definition of addition.
@@ -102,7 +102,7 @@ No exercises in this chapter.
 \begin{exo}{2.2.2}{Let $a$ be a positive number. Prove that there
     exists exactly one natural number $b$ such that $\successor{b} =
     a$.}
-  
+
   Let's use induction on $a$.
 
   \begin{itemize}
@@ -130,7 +130,7 @@ No exercises in this chapter.
   \item Reflexivity: $a \geq a$. This is true since $a = 0 + a$ by
     Definition 2.2.1. By commutativity of addition, we can also write
     $a = a + 0$. So there is indeed a natural number $n$ (with
-    $n=0$) such that $a = a + n$, i.e. $a \geq a$.
+    $n=0$) such that $a = a + n$, i.e., $a \geq a$.
   \item Transitivity: if $a \geq b$ and $b \geq c$, then $a \geq
     c$. From the part $a \geq b$, there exists a natural number $n$
     such that $a = b + n$ according to Definition 2.2.11. A similar
@@ -154,12 +154,12 @@ No exercises in this chapter.
     exists a natural number $n$ such that $a+c = b+c+n$. By
     cancellation law (Proposition 2.2.6)\footnote{And also
       associativity and commutativity that we do not detail explicitly
-      here.}, we conclude that $a = b + n$, i.e. $a\geq b$, thus
+      here.}, we conclude that $a = b + n$, i.e., $a\geq b$, thus
     demonstrating the first implication. Conversely, let's suppose
     that $a \geq b$. There exists a natural number $m$ such that
     $a = b + m$. Therefore, $a + c = b+m+c$ for any natural number
     $c$. Still by associativity and commutativity, we can rewrite this
-    as $a+c = (b+c) +m$, i.e. $a+c \geq b+c$.
+    as $a+c = (b+c) +m$, i.e., $a+c \geq b+c$.
   \item $a < b$ iff $\successor{a} \leq b$. First suppose that
     $\successor{a} \leq b$. Thus, there exists a natural number $n$ such
     that:
@@ -172,7 +172,7 @@ No exercises in this chapter.
       \end{align*}
       which means that $a \leq b$. We still have to prove that $a \neq
       b$. Suppose for the sake of contradiction that $a=b$. We could
-      use use the cancelation law in $b = a + \successor{n}$ to get
+      use use the cancellation law in $b = a + \successor{n}$ to get
       $0 = \successor{n}$, a contradiction with Axiom
       2.3. We thus have $a \leq b$ and $a \neq b$, i.e., $a < b$.
 
@@ -180,7 +180,7 @@ No exercises in this chapter.
       number $n$ such that $b = a + n$, and $a \neq b$. The condition
       $a \neq b$ clearly implies $n \neq 0$ (otherwise we would immediately
       get $a=b$, a contradiction). By Exercise 2.2.2, there exists a
-      natural numer $m$ such that $\successor{m} = n$. We thus have,
+      natural number $m$ such that $\successor{m} = n$. We thus have,
       still using Definitions 2.2.1 and 2.2.11, and Proposition 2.2.4,
       \[
         b = a + \successor{m} = (\successor{m}) + a =
@@ -250,7 +250,7 @@ No exercises in this chapter.
       $b+1 = a + m + 1$ and then use the cancellation law.}. By Axiom
     2.4., this is equivalent to $b = a+n$, which can also be written
     $a \leq b$.
-    
+
     Conversely, if $a \leq b$, there exists a natural number $m$
     such as $b = a+m$. Thus, $\successor{b} = \successor{(a+m)} =
     a + (\successor{m})$ by Definition of addition
@@ -274,7 +274,7 @@ No exercises in this chapter.
     that $Q(\successor{n})$ is also true. If $Q(n)$ is true, $P(m)$ is
     true for all $m$ such that $m_0 \leq m < n$. By hypothesis, this
     implies that $P(n)$ is true. Thus, $P(m)$ is true for any natural
-    number $m$ such that $m_0 \leq m \leq n$, i.e. such that $m_0 \leq
+    number $m$ such that $m_0 \leq m \leq n$, i.e., such that $m_0 \leq
     m < \successor{n}$ according to the lemma introduced above. This
     is precisely $Q(\successor{n})$, and this closes the induction.
   \end{itemize}
@@ -290,7 +290,7 @@ No exercises in this chapter.
     $P(n)$ is also true. Prove that $P(m)$ is true for all natural
     numbers $m \leq n$; this is known as the \emph{principle of
       backwards induction}.}
-  
+
   Terence Tao suggests to use induction on $n$. So let $Q(n)$ be the
   following property: ``if $P(n)$ is true, then $P(m)$ is true for all
   $m \leq n$. The goal is to prove $Q(n)$ for all natural numbers $n$.
@@ -379,7 +379,7 @@ No exercises in this chapter.
     Thus, both sides of equation \eqref{eq:proof_lemma_231} are equal,
     and we can close the induction.
   \end{proof}
-  
+
   Now it is easier to prove the main result ($n \times m = m \times
   n$), by an induction on $n$.
 
@@ -400,11 +400,11 @@ No exercises in this chapter.
     Using the lemma introduced above, the right hand side is equal to
     $(m \times n) + m$. By induction hypothesis, this is also equal to
     $(n \times m) + m$, which closes the induction.
-  \end{itemize}  
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{2.3.2}{Show that positive natural numbers have no zero
-    divisors, i.e. that $nm=0$ iff $n=0$ or $m=0$. In particular, if
+    divisors, i.e., that $nm=0$ iff $n=0$ or $m=0$. In particular, if
     $n$ and $m$ are both positive, then $nm$ is also positive.}
 
   We will prove the second statement first. Suppose, for the sake of
@@ -519,7 +519,7 @@ No exercises in this chapter.
   As a general reminder, we recall that sets are objects (Axiom 3.1)
   and the empty set $\emptyset$ is such that no object is an element of
   $\emptyset$, thus $\emptyset \notin \emptyset$.
-  
+
   \begin{enumerate}
   \item First let's show that $\emptyset$ is different from all other
     sets. $\emptyset$ is an element of $\{\emptyset\}$ and
@@ -627,12 +627,12 @@ No exercises in this chapter.
     always have $x \in A$. Now let's prove the converse inclusion: let
     $x$ be an element of $A$; we must show that $x \in A \cap B$. If
     $x \in A$, then $x \in A \cup B$. But, by hypothesis, $A \cup B =
-    B$, thus $x \in B$. So, $x \in A$ and $x \in B$, i.e. $x \in A
+    B$, thus $x \in B$. So, $x \in A$ and $x \in B$, i.e., $x \in A
     \cap B$. This demonstrates the implication.
   \item Finally, we prove that $A \cap B = A \Longrightarrow A
     \subseteq B$. Let $x \in A$. Since $A \cap B = A$, we have $x \in
     A \cap B$. It follows that $x \in B$. We have proved that any
-    element $x \in A$ is also an element of $B$, i.e. $A \subseteq B$.
+    element $x \in A$ is also an element of $B$, i.e., $A \subseteq B$.
   \end{enumerate}
 \end{exo}
 
@@ -682,19 +682,19 @@ No exercises in this chapter.
     X$ and $x \notin B$, which means that $x \in X \backslash B$. We
     have proved that $A \subseteq X \backslash B$.
   \item Conversely, let $x$ be an element of $X \backslash B$. By
-    definition, this means that $x \in X$, i.e. $x \in A \cup B$, and
+    definition, this means that $x \in X$, i.e., $x \in A \cup B$, and
     $x \notin B$. Since $x \in A \cup B$, we have either $x \in A$ or
     $x \in B$, but we know that the latter is impossible. Thus, we
     have necessarily $x \in A$. We have proved that $X \backslash B
     \subseteq A$.
   \item We can conclude that $X \backslash B = A$.
   \end{itemize}
-  
+
 \end{exo}
 
 \begin{exo}{3.1.11}{Prove that the axiom of replacement (Axiom 3.6)
     implies the axiom of specification (Axiom 3.5).}
-  
+
   Let's recall the axiom of replacement. Let $A$ be a set. For every
   $x \in A$, and for every (abstract) object $y$, let $P(x,y)$ be a
   statement pertaining to both $x$ and $y$, such that for any
@@ -719,7 +719,7 @@ No exercises in this chapter.
                              for some } x \in A
     \\
     \Longleftrightarrow \; & x = z \text{ and } P(z) \text{ is true
-                             for some } x \in A \text{ 
+                             for some } x \in A \text{
                              (by axiom of substitution)} \\
     \Longleftrightarrow \; & z \in A \text{ and } P(z) \text{ is true }
   \end{align*}
@@ -776,8 +776,8 @@ No exercises in this chapter.
       x &=& x' \; \text{ because $f$ is injective}
     \end{eqnarray*}
     We have showed that $g \circ f (x) = g \circ f (x') \to x
-    = x'$ for all $x, x' \in X$, i.e. that $g \circ f$ is injective.
-    
+    = x'$ for all $x, x' \in X$, i.e., that $g \circ f$ is injective.
+
   \item Suppose that $f$ and $g$ are both surjective, and let
     be $z \in Z$. Since $g$ is surjective, there exists $y \in Y$ such
     that $z = g(y)$. And since $f$ is surjective, there exists $x \in
@@ -789,8 +789,8 @@ No exercises in this chapter.
 
 \begin{exo}{3.3.3}{When is the empty function injective? surjective?
     bijective?}
-  
-  Let $f$ be the empty function, i.e. $f : \emptyset \to Y$
+
+  Let $f$ be the empty function, i.e., $f : \emptyset \to Y$
   for a certain range $Y$.
   \begin{enumerate}
   \item $f$ is injective iff $x \neq x' \Rightarrow f(x) \neq f(x')$.
@@ -839,15 +839,15 @@ No exercises in this chapter.
     domain and range. Let be $y, y' \in Y$. Since $f$ is surjective,
     there exist $x, x' \in X$ such that $y = f(x)$ and $y' = f(x')$
     respectively. Since $g \circ f = g \circ \tilde{f}$, we have
-    $g(f(x)) = g(f(x'))$, i.e. $g(y) = g(y')$. We have showed that,
+    $g(f(x)) = g(f(x'))$, i.e., $g(y) = g(y')$. We have showed that,
     for any $y, y' \in Y$, we have $g(y) = g(y')$, which means that $g
     = \tilde{g}$.
 
     This statement is false if $f$ is not surjective. For instance,
-    let $f$ be a constant function, e.g. $f : \rr \to \rr$
+    let $f$ be a constant function, e.g., $f : \rr \to \rr$
     with $f(x) = 1$ for all $x$. Let $g, \tilde{g} : \rr \to
     \rr$ with $g(x) = 0$ and $\tilde{g}(x) = - x +1$. We have $g(1) =
-    \tilde{g}(1)$, i.e. $g(f(x)) = \tilde{g}(x)$ for all $x \in X$,
+    \tilde{g}(1)$, i.e., $g(f(x)) = \tilde{g}(x)$ for all $x \in X$,
     but we obviously do not have $g = \tilde{g}$.
   \end{enumerate}
 \end{exo}
@@ -905,7 +905,7 @@ No exercises in this chapter.
     a$. We thus have proved that $\inv{f}(f(a)) = a$.
   \item The proof for $f(\inv{f}(y)) = y$ is similar.
   \item To prove that $\inv{f}$ is also invertible, we need to prove
-    that $\inv{f}$ is bijective, i.e. injective and surjective.
+    that $\inv{f}$ is bijective, i.e., injective and surjective.
 
     For any given $y \in Y$, since $f$ is bijective, there exists exactly
     one $x \in X$ such that $y = f(x)$. Similarly, for any given $y'
@@ -921,7 +921,7 @@ No exercises in this chapter.
     Furthermore, for any given $x \in X$, let's denote $y =
     f(x)$. Since $f$ is bijective, this means that $\inv{f}(y) =
     x$. Thus, any $x \in X$ has a predecessor $y \in Y$ for $\inv{f}$,
-    i.e.  $\inv{f}$ is surjective.
+    i.e.,  $\inv{f}$ is surjective.
   \end{enumerate}
 \end{exo}
 
@@ -935,7 +935,7 @@ No exercises in this chapter.
   Let be any given element $z \in Z$. Since $g$ is bijective, there
   exists one single element $y \in Y$ such that $z = g(y)$, i.e.
   $y = \inv{g}(z)$. And since $f$ is also bijective, there exists
-  exactly one single element $x \in X$ such that $y = f(x)$, i.e. $x =
+  exactly one single element $x \in X$ such that $y = f(x)$, i.e., $x =
   \inv{f}(y) = \inv{f}(\inv{g}(z))$.
 
   Thus, for every $z \in Z$, there exists exactly one $x \in X$ such
@@ -957,7 +957,7 @@ No exercises in this chapter.
   first introduce some notations to avoid any confusion :
   \begin{itemize}
   \item Let $F$ be the \emph{forward image} of $V$ under $\inv{f}$,
-    i.e. $F = \{\inv{f}(y) \; | \; y \in V\}$.
+    i.e., $F = \{\inv{f}(y) \; | \; y \in V\}$.
   \item Let $I$ be the \emph{inverse image} of $V$ under $f$, i.e.
     $I = \{x \in X \; | \; f(x) \in V\}$.
   \end{itemize}
@@ -973,7 +973,7 @@ No exercises in this chapter.
     have both $x \in X$ (beacuse $F \subseteq X$) and $f(x) \in V$,
     which means that $x \in I$.
   \item Conversely, let be $x \in I$. By definition, this means that
-    $x \in X$ and that $f(x) \in V$, i.e. there exists a certain
+    $x \in X$ and that $f(x) \in V$, i.e., there exists a certain
     element $y \in V$ such that $y = f(x) \in V$. This latter
     statement is equivalent to $x = \inv{f}(y)$. Thus, we have $x \in
     X$ and $x = \inv{f}(y)$ for a certain $y \in V$, which means that
@@ -985,7 +985,7 @@ No exercises in this chapter.
     a subset of $X$ and let $U$ be a subset of $Y$. What, in general,
     can one say about $\inv{f}(f(S))$ and $S$? What about
     $f(\inv{f}(U))$ and $U$?}
-  
+
   This exercise gives a first taste of Exercise 3.4.5 below.
 
   \begin{enumerate}
@@ -1024,7 +1024,7 @@ No exercises in this chapter.
     that $f(A) \backslash f(B) \subseteq f(A \backslash B)$, and $f(A
     \cup B) = f(A) \cup f(B)$. Is it true that, for the first two
     statements, the $\subseteq$ relation can be improved to $=$?}
-  
+
   Let's prove the three statements successively:
   \begin{enumerate}
   \item If $y \in f(A \cap B)$, then there exists $x \in A \cap B$
@@ -1069,7 +1069,7 @@ No exercises in this chapter.
     $\inv{f}(A \cup B) = \inv{f}(A) \cup \inv{f}(B)$, that
     $\inv{f}(A \cap B) = \inv{f}(A) \cap \inv{f}(B)$, and that
     $\inv{f}(A \backslash B) = \inv{f}(A) \backslash \inv{f}(B)$.}
-  
+
   We prove only the first statement here; since only very small
   adjustments are required in its proof to prove the last two ones.
 
@@ -1126,7 +1126,7 @@ No exercises in this chapter.
       statement is vacuously true, so that we can suppose
       $S \neq \emptyset$.}. Since $f$ is surjective, there exists
     $x \in X$ such that $y = f(x)$. Recall that $y \in S$: this means
-    that$f(x) \in S$, i.e. $x \in \inv{f}(S)$. Thus,
+    that$f(x) \in S$, i.e., $x \in \inv{f}(S)$. Thus,
     $y = f(x) \in f(\inv{f}(S))$. We have proved that, if $f$ is
     surjective, $y \in S \to y \in f(\inv{f}(S))$, i.e.
     $S \subseteq f(\inv{f}(S))$.
@@ -1155,7 +1155,7 @@ No exercises in this chapter.
     singleton, thus $x \notin \inv{f}(f(\{x_0\}))$, and thus
     $f(x) \neq f(x_0)$. This means that $f$ is injective.
 
-    The second equivalence is proved.    
+    The second equivalence is proved.
   \end{enumerate}
 \end{exo}
 
@@ -1259,7 +1259,7 @@ No exercises in this chapter.
      $\bigcup_{X' \in 2^X} S_{X'} := \bigcup \{S_{X'} \, | \, X' \in
      2^X\}$. And, for every function $f$, we have
      $f \in \bigcup \{S_{X'} \, | \, X' \in 2^X\}$ iff there exists
-     $X' \in 2^X$ such that $f \in S_{X'}$, i.e. if there exists
+     $X' \in 2^X$ such that $f \in S_{X'}$, i.e., if there exists
      $X' \subset X$ and $Y' \subset Y$ such that
      $f: X' \to Y'$.
    \item Consequently, we have proved that there exists a set which
@@ -1344,12 +1344,12 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     $(x,x)$ will be (by definition) equal to $\{\{x\},
     \{x,x\}\}$. Applying twice the Remark 3.1.9 made by Terence Tao,
     we can conclude that $(x,x) = \{\{x\}\}$ for any object $x$.
-    
+
     Conversely, if any ordered pair $(x,y)$ is a singleton, this means
     that $\{\{x\}, \{x,y\}\}$ is a singleton. This implies that both
-    elements of this pair set are equal, i.e. $\{x\} = \{x,y\}$. Thus,
-    (by Definition 3.1.4,) $y \in \{x\}$, i.e. $x=y$.
-    
+    elements of this pair set are equal, i.e., $\{x\} = \{x,y\}$. Thus,
+    (by Definition 3.1.4,) $y \in \{x\}$, i.e., $x=y$.
+
     This gives a handy conclusion, that we can write as a lemma:
     \begin{lem} An ordered pair $(x,y)$ is a singleton if and only
       if $x=y$ (and in this case, this singleton is $\{\{x\}\} =
@@ -1369,9 +1369,9 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
         roles). Thus $(a,b) = \{\{a\}\}$. Since $(a,b) = (x,y)$, we have
         $\{\{x\},\{x,y\}\} = \{\{a\}\}$.
 
-        This means that $\{x\} \in \{\{a\}\}$, i.e. $a=x$.
+        This means that $\{x\} \in \{\{a\}\}$, i.e., $a=x$.
 
-        But we also have $\{x,y\} \in \{\{a\}\}$, i.e. $\{x,y\} =
+        But we also have $\{x,y\} \in \{\{a\}\}$, i.e., $\{x,y\} =
         \{a\}$. This means in particular that $\{x,y\}$ is a
         singleton, which is only possible if $x=y$ according to the
         lemma introduced above.
@@ -1381,7 +1381,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
 
         We can insist: if we have either $a=b$ or $x=y$, then all four
         elements are equal, and property (3.5) is met.
-        
+
       \item The other case is $a \neq b$ (which also implies $x \neq
         y$, otherwise all four elements would be equal). Since $(a,b)
         = (x,y)$, we have $\{a\} \in \{\{x\}, \{x,y\}\}$, so that we
@@ -1389,14 +1389,14 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
         case can be excluded: $\{a\} = \{x,y\}$ would mean that
         $\{x,y\}$ is a singleton, thus $x=y$, a contradiction with our
         hypothesis. Thus, the only possibility is $\{a\} = \{x\}$,
-        i.e. $a=x$.
+        i.e., $a=x$.
 
         We also have $\{a,b\} \in \{\{x\}, \{x,y\}\}$, and for the
         same reason, the only possibility is $\{a,b\} = \{x,y\}$. But
         we have showed that $a=x$, so that $\{a,b\} = \{a,y\}$. The
         conclusion is $y=b$.
       \end{enumerate}
-        
+
       \item Conclusion: in both cases, $(a,b)$ implies both $a=x$ and $y=b$,
       which is our initial goal. Property (3.5) is met.
     \end{itemize}
@@ -1447,7 +1447,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
 \begin{exo}{3.6.3}{Let $n$ be a natural number, and let
     $f : \{i \in \nn \, : \, 1 \leq i \leq n\} \to \nn$ be a
     function. Show that there exists a natural number $M$ such that
-    $f(i) \leq M$ for all $1 \leq i \leq n$. Thus ﬁnite subsets of the
+    $f(i) \leq M$ for all $1 \leq i \leq n$. Thus finite subsets of the
     natural numbers are bounded.}
 
   Let's induct on $n$.
@@ -1481,7 +1481,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
 \begin{exo}{3.6.7}{Let $A$ and $B$ be sets. Let us say that $A$ has
     \emph{lesser or equal cardinality} to $B$ if there exists an
     injection $f : A \to B$ from $A$ to $B$. Show that if $A$ and $B$
-    are ﬁnite sets, then $A$ has lesser or equal cardinality to $B$ if
+    are finite sets, then $A$ has lesser or equal cardinality to $B$ if
     and only if $\#(A) \leq \#(B)$.}
 
   Since $A$ is finite, there exists a natural number $n$ such that $\#
@@ -1526,7 +1526,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
   \begin{itemize}
   \item Reflexivity: let $a$ and $b$ be natural numbers, so that
     $a \minus b$ is an integer. We know that, on natural numbers,
-    equality is reflexive, i.e. $a+b = a+b$. This equality means
+    equality is reflexive, i.e., $a+b = a+b$. This equality means
     precisely that $a \minus b = a \minus b$.
   \item Symmetry: let $a, b, c, d$ be natural numbers. If $a \minus b
     = c \minus d$, do we also have $c \minus d = a \minus b$?
@@ -1565,7 +1565,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
            &= b' + a \text{ (by commutativity on naturals once again)}
   \end{align*}
   and this equality $b+a' = b'+a$ precisely means that $b \minus a =
-  b' \minus a'$, i.e. that $-(a \minus b) = -(a' \minus b')$.
+  b' \minus a'$, i.e., that $-(a \minus b) = -(a' \minus b')$.
 \end{exo}
 
 \bigskip
@@ -1574,7 +1574,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
 
   Since $a$ is an integer, there exist two natural numbers $n$ and $m$
   such that $a = m \minus n$.
-  
+
   On the one hand, by Definition 4.1.4, $-a = n \minus m$.
 
   On the other hand, using once again Definition 4.1.4 and Definition
@@ -1608,7 +1608,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
             again)} \\
           &= y + x
     \end{align*}
-  \item $(x+y)+z = x+(y+z)$, i.e. prove that addition is associative on the
+  \item $(x+y)+z = x+(y+z)$, i.e., prove that addition is associative on the
     integers. This is a very similar proof, and this is a direct
     consequence of associativity of addition on the naturals.
   \item $x+0 = 0+x = x$. We have already showed that addition is
@@ -1630,7 +1630,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
                  naturals)} \\
                &= 0 \text{ (because $m \minus m = 0 \minus 0$ for all integer $m$)}
     \end{align*}
-  \item $xy = yx$, i.e. multiplication is commutative on the integers.
+  \item $xy = yx$, i.e., multiplication is commutative on the integers.
     \begin{align*}
       xy &= (a \minus b) \times (c \minus d) \\
          &= (ac+bd) \minus (ad+bc) \text{ (by Definition 4.1.2)}\\
@@ -1638,7 +1638,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
            commutative on the naturals)}\\
          &= yx \text{ (by Definition 4.1.2)}
     \end{align*}
-  \item $(xy)z = x(yz)$, i.e. multiplication is associative on the
+  \item $(xy)z = x(yz)$, i.e., multiplication is associative on the
     integers. This is actually the only identity proved in the main
     text by Terence Tao.
   \item $x1 = 1x = x$. The equality between the first two terms is a
@@ -1646,7 +1646,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     integers. We just have to prove that $x1 = x$. And indeed, $x1 =
     (a \minus b) \times (1 \minus 0) = (a1 + b0) \minus (b1 + a0) = a
     \minus b = x$.
-  \item $x(y+z) = xy+xz$, i.e. show distributivity on the integers. On
+  \item $x(y+z) = xy+xz$, i.e., show distributivity on the integers. On
     the left side, we have:
     \begin{align*}
       x(y+z) &= (a \minus b)\left((c \minus d) + (e \minus f)\right)
@@ -1668,7 +1668,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     consequence of commutativity of multiplication on the integers,
     and distributivity on the integers, both being already proved
     earlier in this exercise.
-  \end{enumerate}  
+  \end{enumerate}
 \end{exo}
 
 \begin{exo}{4.1.5}{Prove Proposition 4.1.8, i.e.: let $x$ and $y$ be
@@ -1705,12 +1705,12 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     case, if $xy=0$ with $x$ non-zero, we have showed that $y$ is
     necessarily equal to 0.
   \item Finally, let's take the case where $x$ is the opposite of a
-    positive natural number $n$, i.e. $x = 0 \minus n$. A very similar
+    positive natural number $n$, i.e., $x = 0 \minus n$. A very similar
     proof also leads to $c=d$, and to $y=0$.
   \end{enumerate}
 \end{exo}
 
-\begin{exo}{4.1.6}{Prove Corollary 4.1.9, i.e. if $a,b,c$ are integers
+\begin{exo}{4.1.6}{Prove Corollary 4.1.9, i.e., if $a,b,c$ are integers
     such that $ac = bc$ and $c$ is non-zero, then $a=b$.}
 
   If $ac = bc$, then $ac + (-bc) = bc + (-bc) = 0$. Thus, $ac - bc =
@@ -1727,7 +1727,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
 \bigskip
 
 \begin{exo}{4.1.7}{Prove Lemma 4.1.11.}
-  
+
   The statements to prove are the following:
 
   \begin{enumerate}[label=(\alph*)]
@@ -1737,16 +1737,16 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     First suppose that $a>b$. This means (Definition 4.1.10) that
     there exists a natural number $n$ such that $a = b+n$, and
     $a \neq b$. Then, we add to both sides the opposite of $b$, and we
-    get $a + (-b) = b + n + (-b)$, i.e. $a-b = n$. In this latest
+    get $a + (-b) = b + n + (-b)$, i.e., $a-b = n$. In this latest
     equality, $n$ cannot be zero, otherwise we would have $a=b$, which
     is excluded. The first implication is proved.
 
     Then suppose that $a-b =n$ with $n$ a positive natural
-    number. Adding $b$ to both sides leads to $a = b+n$, i.e. $a \geq
+    number. Adding $b$ to both sides leads to $a = b+n$, i.e., $a \geq
     b$. We cannot have $a=b$, because this would be a contradiction
     with the fact that $n \neq 0$. Thus, $a > b$.
 
-  \item Show that addition preserves order, i.e. if $a>b$, then $a+c >
+  \item Show that addition preserves order, i.e., if $a>b$, then $a+c >
     b+c$.
 
     Suppose that $a>b$. According to the previous point, this
@@ -1763,8 +1763,8 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     \]
     Using again the previous point, since $(a+c) - (b+c)$ is equal to
     a positive natural number, we can conclude that $a+c > b+c$.
-    
-  \item Show that positive multiplication preserves order, i.e. if
+
+  \item Show that positive multiplication preserves order, i.e., if
     $a>b$ and $c$ is positive, then $ac > bc$.
 
     Since $a>b$, according to the first point of this exercise, we
@@ -1773,8 +1773,8 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     and $nc$ is a positive natural number (as product of two positive
     numbers, see Lemma 2.3.3). Thus, $ac-bc$ is equal to a positive
     number, which means that $ac > bc$.
-    
-  \item Show that negation reverses order, i.e. if $a>b$, then
+
+  \item Show that negation reverses order, i.e., if $a>b$, then
     $-a<-b$.
 
     Here, we will need a small lemma, which says that for any natural
@@ -1789,15 +1789,15 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     prove that $-a < -b$, and proving this assertion requires to show
     that $-b -(-a)$ is a positive number. But $-b-(-a) = -b+a = a-b$,
     which is a positive natural number. Thus we are done.
-    
-  \item Show that order is transitive, i.e. if $a>b$ and $b>c$, then
+
+  \item Show that order is transitive, i.e., if $a>b$ and $b>c$, then
     $a>c$.
 
     Still using the first point of this exercise, we have $a-b=n$ and
     $b-c=m$, with $n,m$ two positive natural numbers. We know that
     $n+m$ is positive as the sum of two positive numbers, thus
     $n+m = a-b+b-c = a-c$ is positive. This means that $a>c$.
-    
+
   \item Show order trichotomy, i.e.: exactly one of the statements
     $a>b$, $a<b$, or $a=b$ is true.
     \begin{itemize}
@@ -1816,7 +1816,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
 
     Finally, we just have to show that we cannot have both $a>b$ and
     $b>a$ at the same time. If $a>b$, then the integer $a-b$ is
-    positive. If $b>a$, then $b-a$ is positive, i.e. $-(b-a) = a-b$ is
+    positive. If $b>a$, then $b-a$ is positive, i.e., $-(b-a) = a-b$ is
     the opposite of a positive natural. Thus, $a-b$ is both positive
     and the opposite of a positive number, which is excluded by the
     trichotomy of integers.
@@ -1836,7 +1836,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
   natural number.
 
   Let's define $P(n)$ as the property ``The integer $n$ is a natural
-  number, i.e. is either equal to 0 or equal to a positive natural
+  number, i.e., is either equal to 0 or equal to a positive natural
   number''. Obviously, $P(0)$ is true. Furthermore, if $n$ is a
   natural number, then $\successor{n}$ is also a natural number (Axiom
   2.2), so that if $P(n)$ is true, then $P(\successor{n})$ is
@@ -1864,7 +1864,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     (commutativity of multiplication on $\zz$ and) reflexivity of
     equality on $\zz$.
   \item Symmetry: here we must prove that if $a \quot b = c \quot d$,
-    we also have $c \quot d = a \quot b$. We have successively:    
+    we also have $c \quot d = a \quot b$. We have successively:
     \[\begin{array}{lrcl}
                           & a \quot b  &=& c \quot d \\
       \Longleftrightarrow & ad &=& bc \\
@@ -1907,7 +1907,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
 
   \begin{itemize}
   \item Prove that $-(a' \quot b') = -(a \quot b)$. This equality
-    holds iff $(-a') \quot b' = (-a) \quot b$, i.e. iff $(-a')b =
+    holds iff $(-a') \quot b' = (-a) \quot b$, i.e., iff $(-a')b =
     b'(-a)$. We have successively:
     \begin{align*}
       (-a')b &= (-1)a'b \text{ (see Exercise 4.1.3)} \\
@@ -1940,7 +1940,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
   remaining claims are the following:
 
   \begin{enumerate}
-  \item $x+y = y+x$, i.e. addition is commutative for the
+  \item $x+y = y+x$, i.e., addition is commutative for the
     rationals.
 
     On the one hand, we have $x+y = a \quot b + c \quot d =
@@ -1962,19 +1962,19 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     \quot b^2$. But we know that $0 \quot m = 0 \quot 1 = 0$ for all non-zero
     integer $m$, since $0 \times 1 = m \times 0$. Thus, $x + (-x) = 0
     \quot b^2 = 0$, as required.
-  \item $xy = yx$, i.e. multiplication is commutative on the
+  \item $xy = yx$, i.e., multiplication is commutative on the
     rationals. Indeed, $xy = (a \quot b) \times (c \quot d) = (ac)
     \quot (bd)$ by definition. On the other hand, $yx = (c \quot d)
     \times (a \quot b) = (ca) \quot (db) = (ac) \quot (bd)$ by
     commutativity of multiplication on the integers. Thus, $xy = yx$.
-  \item $(xy)z = x(yz)$, i.e. multiplication is associative on the
+  \item $(xy)z = x(yz)$, i.e., multiplication is associative on the
     rationals. We have $(xy)z = (ace) \quot (bdf) = x(yz)$ by
     associativity of multiplication on the integers.
   \item $x1 = 1x = x$. Once again, we already know that $x1 = 1x$,
     thanks to the fifth point of this exercise. So we just have to
     show that $x1 = x$. We have $x1 = (a \quot b) \times (1 \quot 1) =
     (a1) \quot (b1) = a \quot b = x$.
-  \item $x(y+z) = xy+xz$, i.e. distributivity of multplication for the
+  \item $x(y+z) = xy+xz$, i.e., distributivity of multplication for the
     rationals. On the one hand, we have:
     \begin{align*}
       x(y+z) &= (a \quot b) (c \quot d + e \quot f) \\
@@ -2032,7 +2032,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     \item $a>0$ and $b<0$. Here, $b = -m$, with $m$ a positive natural
       number. Thus, $x = a \quot (-m)$. But $a \quot (-m) = (-a) \quot
       m$ (this is easy to verify: $am = (-a)(-m)$). This means that $x
-      = (-a) \quot m$, with both $a$ and $m$ positive, i.e. $x$ is
+      = (-a) \quot m$, with both $a$ and $m$ positive, i.e., $x$ is
       negative.
     \item $a<0$ and $b>0$. Here, $x = a \quot b$ is negative by
       Definition 4.2.6.
@@ -2054,7 +2054,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     \item A similar argument holds if we suppose both $x=0$ and $x$
       negative.
     \item Now suppose that we have both $x$ positive and $x$ negative,
-      i.e. $x = c \quot d = (-n) \quot m$, with $c,d,n,m$ positive
+      i.e., $x = c \quot d = (-n) \quot m$, with $c,d,n,m$ positive
       natural numbers. Thus, we should have $cm = (-n)d$. On the one
       hand, $cm$ is positive, as the multiplication of two positive
       natural numbers. On the other hand, $(-n)d = -(nd)$ is
@@ -2086,8 +2086,8 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
 
     Since $x<y$, the rational number $x-y$ is negative, and can be
     written $(-a) \quot b$ for positive integers $a,b$. And since $x-y
-    = -a \quot b$, we have $a \quot b = y-x$, i.e. $y-x$ is positive,
-    i.e. $y>x$.
+    = -a \quot b$, we have $a \quot b = y-x$, i.e., $y-x$ is positive,
+    i.e., $y>x$.
   \item Prove that if $x < y$ and $y < z$, then $x < z$.
 
     Since $x<y$, $x-y$ is negative. Similarly, $y-z$ is negative. This
@@ -2128,7 +2128,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
 
   But $(x-y)z = xz - yz$ by Proposition 4.2.4. And since we have
   showed that this number is positive, we have $xz>yz$.
-  
+
   Note: in particular, this exercise says that if $x>y$, then $-x<-y$
   (with $z=-1$).
 \end{exo}
@@ -2144,7 +2144,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
       0$ iff $x=0$.
 
       There are three cases:
-      
+
       \begin{itemize}
       \item if $x=0$, then $\abs{x} := 0$, thus we have in particular
         $\abs{x} \geq 0$.
@@ -2169,8 +2169,8 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
         signs. Say that $x$ is positive and $y$ negative, but they are
         exchangeable. On the one hand, $\abs{x} + \abs{y} = x-y >
         0$. On the other hand, $\abs{x+y}$ can be either equal to
-        $x+y$ if $x+y>0$, i.e. if $x>-y$; or equal to $-x-y$ if
-        $x+y<0$, i.e. if $x<-y$.
+        $x+y$ if $x+y>0$, i.e., if $x>-y$; or equal to $-x-y$ if
+        $x+y<0$, i.e., if $x<-y$.
 
         In the first case, since $-y<0<y$ by hypothesis, we have
         $\abs{x+y} = x+y < x-y = \abs{x} + \abs{y}$.
@@ -2196,7 +2196,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
         immediate since $-y$ is negative and $x$ is positive.
 
         If $x < 0$, then $\abs{x} = -x$, thus we have $y \geq -x$,
-        i.e. $-y \leq x$ according to Exercise 4.2.6. Additionally,
+        i.e., $-y \leq x$ according to Exercise 4.2.6. Additionally,
         the part $x \leq y$ is immediate since $x$ is negative and $y$
         is positive.
       \item Conversely, suppose that $-y \leq x \leq y$. If
@@ -2229,17 +2229,17 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
       \end{itemize}
 
     \item Show that $d(x,y) \leq 0$ for all $x,y$, and that $d(x,y) = 0$ iff $x=y$.
-      
+
       We have $d(x,y) = \abs{x-y} \geq 0$ according to the first point
       of this exercise. Furthermore, still according to the first point, $d(x,y) =
-      \abs{x-y} = 0$ iff $x-y = 0$, i.e. $x=y$.
+      \abs{x-y} = 0$ iff $x-y = 0$, i.e., $x=y$.
     \item Show that $d(x,y) = d(y,x)$.
-      
+
       We have $d(x,y) = \abs{x-y}$ and $d(y,x) = \abs{y-x}$ by
       definition. But $\abs{y-x} = \abs{-(x-y)} = \abs{x-y}$ according
       to the fourth point of this exercise.
     \item Show that $d(x,z) \leq d(x,y) + d(y,z)$.
-      
+
       We have $d(x,z) = \abs{x-z} = \abs{(x-y) + (y-z)} \leq \abs{x-y} +
       \abs{y-z}$ according to the second point of this exercise. The
       claim follows.
@@ -2298,11 +2298,11 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     Proposition 4.3.3(d), $\abs{x-y}{z} = \abs{(x-y)z} =
     \abs{xz-yz}$. Thus, $\abs{xz-yz} \leq \epsilon \abs{z}$, i.e.,
     $xz$ and $yz$ are $\epsilon \abs{z}$-close.
-  \end{enumerate}  
+  \end{enumerate}
 \end{exo}
 
 \begin{exo}{4.3.3}{Prove Proposition 4.3.10.}
-  
+
   Let $x$, $y$ be rationals, and $n$, $m$ be natural numbers. The
   claims to prove are the following (they are re-ordered and
   re-numbered here):
@@ -2310,11 +2310,11 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
   \begin{enumerate}[label=\emph{(\alph*)}]
   \item Show that $x^n x^m = x^{n+m}$. We induct on $n$ while keeping
     $m$ fixed.
-    
+
     For the base case $n=0$ , we have on the one hand $x^n x^m = x^0
     x^m = 1 \cdot x^m = x^m$. On the other hand, $x^{n+m} = x^{0+m} =
     x^m$. Thus, both sides are equal, and the base case is done.
-    
+
     Now suppose that $x^n x^m = x^{n+m}$, and let's show that $x^{n+1}
     x^m = x^{(n+1)m}$. We have:
     \[
@@ -2342,7 +2342,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
                                           once again)}
       \end{array}
     \]
-    
+
   \item Show that $(x^n)^m = x^{nm}$. We induct on $n$ while keeping
     $m$ fixed.
 
@@ -2366,7 +2366,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
       \end{array}
     \]
     This closes the induction.
-    
+
   \item Show that if $n>0$, then $x^n = 0$ iff $x=0$. For that, let's
     induct on $n$. Here the base case starts with $n=1$ since we
     suppose $n>0$. For $n=1$, $x^1 = x$, thus we obviously have $x^1=0
@@ -2435,7 +2435,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
   This is essentially the same exercise as 4.3.3, but dealing with
   integer exponents (instead of natural exponents). The claims to
   prove are the following (and once again, they are re-labeled):
-  
+
   \begin{enumerate}[label=\emph{(\alph*)}]
   \item Prove that $x^nx^m = x^{n+m}$. Let's distinguish three cases:
     \begin{itemize}
@@ -2452,12 +2452,12 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
       Thus, $x^n x^m = x^n \times (1 / x^q) = x^n / x^q$. We will
       (once again) split into two cases:
       \begin{itemize}
-      \item if $n \geq -m$, i.e. if $n - q \geq 0$, then we can note
+      \item if $n \geq -m$, i.e., if $n - q \geq 0$, then we can note
         that $x^{n-q} \cdot x^q = x^n$ according to Proposition
         4.3.10(a). Thus, let's multiply both sides of this equality by
         $x^{-q}$ to get $x^{n-q} = x^n x^{-q}$; which can be rewritten
         $x^{n+m} = x^n x^m$ as required.
-      \item if $n < -m$, i.e. $q-n>0$, then we can note that
+      \item if $n < -m$, i.e., $q-n>0$, then we can note that
         $x^{q-n} x^n = x^q$ according to Proposition 4.3.10(a). Also,
         since $n-q < 0$, according to Definition 4.3.11, we have
         $x^{n-q} = 1 / x^{q-n}$. Let's multiply both sides by $1/x^n$,
@@ -2488,7 +2488,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     \begin{itemize}
     \item If $n > 0$, according to Proposition 4.3.10(c), we already
       have $x^n \geq y^n \geq 0$, so that we just have to show that
-      the rightmost inequality is strict, i.e. that $y^n > 0$. To show
+      the rightmost inequality is strict, i.e., that $y^n > 0$. To show
       that, we only need to prove $y^n \neq 0$. For the sake of
       contradiction, let's suppose that $y^n = 0$. Our starting
       hypothesis was $x \geq y > 0$, thus we know that $y \neq
@@ -2523,7 +2523,7 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     $y>x$ are impossible, and the only possibility is $x=y$.
 
     Now, if $n <0$, then $n=-p$, with $p$ a positive natural
-    number. Suppose that $x^n = y^n$, i.e. that $x^{-p} = y^{-p}$, or
+    number. Suppose that $x^n = y^n$, i.e., that $x^{-p} = y^{-p}$, or
     finally $1/x^p = 1/y^p$. From this last equality, by multiplying
     both sides by $x^py^p$, we get $y^p = x^p$. We are thus back in
     the previous case, and obtain $x=y$.
@@ -2594,17 +2594,17 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     dividing all terms by $b$, this also means that
     $x = a/b = n + r/b$, with $0 \leq r/b < 1$.
 
-    Since $0 \leq r/b < 1$, we have $n \leq n + r/b < n+1$, i.e. $n
-    \leq x < n+1$, as required.    
+    Since $0 \leq r/b < 1$, we have $n \leq n + r/b < n+1$, i.e., $n
+    \leq x < n+1$, as required.
   \item Now suppose that $x \in \qq_{-}^{\star}$. Consequently, $-x
     \in \qq_+$, and we are back in the previous case: there exists a
-    natural number $n$ such that $n \leq -x < n+1$, i.e. $-n-1 < x
+    natural number $n$ such that $n \leq -x < n+1$, i.e., $-n-1 < x
     \leq -n$. Now we have two possible cases:
     \begin{itemize}
     \item if $x=-n$, then let be $m = -n$. Thus, $m-1 < x \leq m$, and
       then $m \leq x < m+1$, as required.
     \item if $x \neq -n$, then let be $m = -n-1$. Thus,
-      $m < x \leq m + 1$, i.e. $m-1 \leq x < m$. And by denoting
+      $m < x \leq m + 1$, i.e., $m-1 \leq x < m$. And by denoting
       $p=m-1$, we have $p \leq x < p+1$ as required.
     \end{itemize}
   \item Let's prove that this integer $n$ is unique. Suppose that we
@@ -2616,15 +2616,15 @@ $x \in A$ or $x \in B$. This is precisely the Axiom 3.4.
     From (\ref{intpartm}), we also have $-m-1 < -x \leq -m$. And, by
     adding this inequality to (\ref{intpartn}), we get
     $n-m-1 < 0 < n-m+1$. The left-hand side says that $n < m+1$,
-    i.e. that $n \leq m$ (recall Proposition 2.2.12 (e)). Similarly,
-    the right-hand side says that $n > m-1$, i.e. that $n \geq
+    i.e., that $n \leq m$ (recall Proposition 2.2.12 (e)). Similarly,
+    the right-hand side says that $n > m-1$, i.e., that $n \geq
     m$. Thus, we have both $n \leq m$ and $n \geq m$, which means that
     $n=m$.
   \item Finally, this means in particular that there exists a natural
     number $N$ such that $N > x$. Indeed, if $x$ is negative, then
     $N=0$ is suitable; and if $x$ is positive, then $N$ is directly
     given by $N = \floor{x} + 1$.
-  \end{itemize}  
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{4.4.2}{A sequence $a_0, a_1, a_2, \ldots$ of numbers
@@ -2652,7 +2652,7 @@ We follow the hints given by Terence Tao.
   For the base case, $P_0$ is true since $a_n$ are natural numbers for
   all $n$, so that $a_n \geq 0$ for all $n$ by definition.
 
-  Now let's suppose inductively that $P_k$ is true, i.e. that
+  Now let's suppose inductively that $P_k$ is true, i.e., that
   $a_0 > a_1 > a_2 > \ldots \geq k$. If we had $a_p = k$ for one given
   natural number $p$, then we would have $k = a_p > a_{p+1}$. But
   also, $a_{p+1} > a_{p+2} > ... > k$ by induction
@@ -2687,7 +2687,7 @@ We follow the hints given by Terence Tao.
 
 \pagebreak
 \section{The real numbers}
-\begin{exo}{5.1.1}{Prove Lemma 5.1.15, i.e. that every Cauchy sequence
+\begin{exo}{5.1.1}{Prove Lemma 5.1.15, i.e., that every Cauchy sequence
     is bounded.}
 
   Let $(a_n)_{n=1}^\infty$ be a Cauchy sequence.
@@ -2699,30 +2699,30 @@ We follow the hints given by Terence Tao.
     statement with the arbitrary value $\epsilon = 1$ (valid, since 1
     is a positive rational): there exists a natural number $N$ such
     that if $j,k \geq N$, then $|a_j - a_k| \leq 1$.
-    
+
     Since $N \geq N$, we can take in particular $k=N$ to get yet another
     particular formulation: if $j \geq N$, then $|a_j - a_N| \leq 1$.
-    
+
     According to Proposition 4.3.3(b), we have $|x+y| \leq |x| + |y|$ for
     all rationals $x,y$. Let's consider $x = a_j - a_N$ and $y = a_N$:
     this leads to $|a_j| \leq |a_j + a_N| + |a_N|$, i.e.
     $|a_j| - |a_N| \leq |a_j - a_N|$.
-    
+
     Thus, this means that $|a_j| - |a_N| \leq |a_j - a_N| \leq 1$ as
-    soon as $j \geq N$, i.e. that $|a_j| \leq 1 + |a_N|$ for
+    soon as $j \geq N$, i.e., that $|a_j| \leq 1 + |a_N|$ for
     $j \geq N$. We have bounded part of the infinite sequence.
-    
+
   \item The other part is simply the finite sequence $a_0, a_1, \cdots,
     a_{N-1}$. By Lemma 5.1.14, this finite sequence is necessarily bounded
     by a rational number $M$.
-    
+
   \item Finally, let's consider the rational number $B = 1 + |a_N| +
     M$. Since we have both $B \geq M$ and $B \geq 1 + |a_N|$, both the
     infinite sequence $(a_n)_{n=N}^\infty$ and the finite sequence
     $a_0, \cdots, a_{N-1}$ are bounded by $B$. Thus, the whole Cauchy
     sequence $(a_n)_{n=1}^\infty$ is bounded by $B$.
   \end{itemize}
-  
+
 \end{exo}
 
 \begin{exo}{5.2.1}{Show that if $\seq{a_n}{1}$ and $\seq{b_n}{1}$ are
@@ -2787,11 +2787,11 @@ exchangeable here, so that showing only one direction will be enough.
 \begin{exo}{5.3.1}{Prove Proposition 5.3.3.}
 
   The three laws of equality must be verified.
-  
+
   \begin{enumerate}
   \item Reflexivity: let's prove that $x=x$. By Definition 5.3.1, we
     have $x=x$ if and only if $\formallimit{a_n} = \formallimit{a_n}$,
-    i.e. if and only if $\seq{a_n}{1}$ and $\seq{a_n}{1}$ are
+    i.e., if and only if $\seq{a_n}{1}$ and $\seq{a_n}{1}$ are
     equivalent Cauchy sequences. Let be $\epsilon > 0$ a positive
     rational, and let be $N = 1$. For all $n \geq N$, we have $|a_n -
     a_n| = 0 \leq \epsilon$, QED.
@@ -2817,7 +2817,7 @@ exchangeable here, so that showing only one direction will be enough.
     $\epsilon/2$-close. Thus, according to Proposition 4.3.7(c), $a_n$
     and $c_n$ are $\epsilon$-close, which means that $\seq{a_n}{1}$
     and $\seq{c_n}{1}$ are eventually $\epsilon$-close for all
-    $\epsilon$, i.e. are equivalent Cauchy sequences. This closes the
+    $\epsilon$, i.e., are equivalent Cauchy sequences. This closes the
     proof.
   \end{enumerate}
 \end{exo}
@@ -2851,7 +2851,7 @@ exchangeable here, so that showing only one direction will be enough.
                         \frac{\epsilon}{2M_b} \\
                       &\leq \epsilon
   \end{align*}
-  
+
   This proves that $\seq{a_nb_n}{1}$ is a Cauchy sequence, as required.
 \end{exo}
 
@@ -2860,13 +2860,13 @@ exchangeable here, so that showing only one direction will be enough.
     and only if $\formallimit{a} = \formallimit{b}$ (i.e., the Cauchy
     sequences $a,a,a,a,\ldots$ and $b,b,b,b, \ldots$ are equivalent if
     and only if $a=b$).}
-  
+
   In what follows, we denote $\seq{a_n}{1}$ the constant sequence
   $a,a,a,\ldots$, and $\seq{b_n}{1}$ the constant sequence
   $b,b,b,\ldots$.
 
   \begin{itemize}
-  \item If $a=b$, we have $|a-b| = 0$, i.e. $|a_n-b_n| = 0$ for all
+  \item If $a=b$, we have $|a-b| = 0$, i.e., $|a_n-b_n| = 0$ for all
     $n \geq 1$. Thus, $\seq{a_n}{1}$ and $\seq{b_n}{1}$ are
     $\epsilon$-close for all $\epsilon > 0$: they are equivalent Cauchy
     sequences. This means that $a=b$.
@@ -2905,7 +2905,7 @@ exchangeable here, so that showing only one direction will be enough.
   prove that the sequence $\seq{1/n}{1}$ is equivalent to the sequence
   $\seq{0}{1}$. This can be achieved by proving that for all
   $\epsilon > 0$, there exists a natural $N \geq 1$ such that
-  $n \geq N \Longrightarrow |1/n - 0| \leq \epsilon$, i.e. such that
+  $n \geq N \Longrightarrow |1/n - 0| \leq \epsilon$, i.e., such that
   $n \geq 1/\epsilon$.
 
   By Proposition 4.4.1, there always exists a natural number $N$ such
@@ -2916,7 +2916,7 @@ exchangeable here, so that showing only one direction will be enough.
 \bigskip
 
 \begin{exo}{5.4.1}{Prove Proposition 5.4.4.}
-  
+
   Let $x$ be a real number.
   \begin{enumerate}
   \item First we show that at most one of the three statements above is
@@ -2942,10 +2942,10 @@ exchangeable here, so that showing only one direction will be enough.
       $\seq{a_n}{1}$ positively bounded away from $0$, i.e.
       $a_n \geq c$ for a certain rational $c > 0$. Similarly, if $x$
       is negative, then $x = \formallimit{b_n}$, with $\seq{b_n}{1}$
-      negatively bounded away from $0$, i.e. $b_n \leq -d$, or
+      negatively bounded away from $0$, i.e., $b_n \leq -d$, or
       $-b_n \geq d$, for a certain rational $d > 0$. But then,
       according to Definition 5.3.1, $\seq{a_n}{1}$ and $\seq{b_n}{1}$
-      should be equivalent Cauchy sequences, i.e. for any rational
+      should be equivalent Cauchy sequences, i.e., for any rational
       $\epsilon > 0$, there should exist $M \geq 1$ such that
       $|a_n - b_n| \leq \epsilon$ for $n \geq M$. But since $a_n -b_n$
       is positive, this also can be written simply
@@ -2963,7 +2963,7 @@ exchangeable here, so that showing only one direction will be enough.
     or negative.
 
     If $x \neq 0$, then by Lemma 5.3.14, $x = \formallimit{a_n}$ with
-    $\seq{a_n}{1}$ bounded away from $0$, i.e. there exists $c > 0$
+    $\seq{a_n}{1}$ bounded away from $0$, i.e., there exists $c > 0$
     such that $|a_n| \geq c$ for any natural $n$.
 
     It turns out that, for any Cauchy sequence $\seq{a_n}{1}$, if
@@ -3079,7 +3079,7 @@ exchangeable here, so that showing only one direction will be enough.
     be a positive real. Show that $|x-y| < \epsilon$ if and only if $y
     - \epsilon < x < y + \epsilon$; and that $|x-y| \leq \epsilon$ iff
     $y - \epsilon \leq x \leq y + \epsilon$.}
-  
+
   We only give the proof for the strict version; the other one being
   totally similar.
 
@@ -3087,27 +3087,27 @@ exchangeable here, so that showing only one direction will be enough.
   \item First suppose that $|x-y| < \epsilon$, and let's consider two
     cases depending on the sign of $x-y$.
     \begin{itemize}
-    \item If $x-y \geq 0$, i.e. if $x \geq y$, then $|x-y| = x-y <
+    \item If $x-y \geq 0$, i.e., if $x \geq y$, then $|x-y| = x-y <
       \epsilon$ by hypothesis. If we add $y$ to both sides of this
       inequality, we get $x < y + \epsilon$, which is the first part
       of the required result. Furthermore, we know that $y \leq
       x$. And since $\epsilon$ is positive, we have $y - \epsilon < y
       \leq x$. Thus, by combining all those results, we finally get $y
       - \epsilon < y \leq x \leq y + \epsilon$, as required.
-    \item If $x-y < 0$, i.e. if $x < y$, then $|x-y| = y-x < \epsilon$
+    \item If $x-y < 0$, i.e., if $x < y$, then $|x-y| = y-x < \epsilon$
       by hypothesis. This leads to $y - \epsilon < x$, which is the
       first part of the result. Also, since $x < y$, we have $x < y <
       y+\epsilon$. Combining all those results, we finally have $y -
       \epsilon < x < y < y + \epsilon$ as required.
     \end{itemize}
-    
+
   \item Conversely, suppose that $y-\epsilon < x < y+\epsilon$. Adding
     $(-y)$ to each part leads to $-\epsilon < x-y < \epsilon$. There
     are now three cases depending on the sign of $x-y$:
     \begin{itemize}
     \item If $x-y > 0$, then $|x-y| = x-y < \epsilon$ as required.
     \item If $x-y < 0$, then $|x-y| = y-x$. But we know that
-      $y-\epsilon < x$, i.e. $y-x < \epsilon$, as required.
+      $y-\epsilon < x$, i.e., $y-x < \epsilon$, as required.
     \item If $x-y = 0$, then by definition, $|x-y| = 0 < \epsilon$, as
       required.
     \end{itemize}
@@ -3177,13 +3177,13 @@ exchangeable here, so that showing only one direction will be enough.
 
   \begin{enumerate}
   \item Let $z$ be an element of $-E$. By definition, we have $z = -x$
-    for some $x \in E$. Since $x \in E$, we have $x \leq M$, i.e. $z =
+    for some $x \in E$. Since $x \in E$, we have $x \leq M$, i.e., $z =
     -x \geq -M$. This means that $-M$ is a lower bound for $-E$.
   \item Let be $-A$ another lower bound for $-E$, and show that
     $-A \geq -M$. Let be $x \in E$. Thus, we have $-x \in -E$,
     and by definition, $-x \geq -A$. This can also be written $x \leq
     A$, meaning that $A$ is an upper bound for $E$. But by definition
-    of the least upper bound $M$, we have $A \leq M$, i.e. $-A \geq
+    of the least upper bound $M$, we have $A \leq M$, i.e., $-A \geq
     -M$ as required: this closes the proof.
   \end{enumerate}
 \end{exo}
@@ -3198,8 +3198,8 @@ exchangeable here, so that showing only one direction will be enough.
 
   This is not an easy exercise, so that we begin by an informal
   draft of the proof. Tao's advice is to prove by contradiction,
-  i.e. to suppose that the following statement holds:
-  
+  i.e., to suppose that the following statement holds:
+
   $(\mathcal{H})$: there exists no integer $m$ such that
   $L < m \leq K$, where $m/n$ is an upper bound for $E$, but
   $\frac{m-1}{n}$ is not.
@@ -3302,7 +3302,7 @@ exchangeable here, so that showing only one direction will be enough.
     Let's apply the archimedean property\footnote{This has actually
       previously been shown in Exercise 5.4.4.}: since $1$ and
     $\epsilon$ are both positive real numbers, there exists a natural
-    number $M$ such that $M \epsilon \geq 1$, i.e. such that $1/M \leq
+    number $M$ such that $M \epsilon \geq 1$, i.e., such that $1/M \leq
     \epsilon$.
 
     Thus, for a given value of $\epsilon$, taking this natural number
@@ -3357,8 +3357,8 @@ exchangeable here, so that showing only one direction will be enough.
       \leq \frac{1}{M} + q_M
     \end{equation}
     so that, according to Exercise 5.4.8, we have $-1/M + q_M \leq S
-    \leq 1/M + q_M$, i.e. $|q_M - S| \leq 1/M$.
-    
+    \leq 1/M + q_M$, i.e., $|q_M - S| \leq 1/M$.
+
     This is valid for any given $M \geq 1$, and thus closes the proof.
   \end{enumerate}
 \end{exo}
@@ -3374,7 +3374,7 @@ exchangeable here, so that showing only one direction will be enough.
   Let be $x, y$ two real numbers, and consider the two real numbers $x
   + \sqrt{2}$ and $y + \sqrt{2}$. According to Proposition 5.4.14,
   there exists a rational number $q$ such that $x + \sqrt{2} < q < y +
-  \sqrt{2}$; i.e. $x < q - \sqrt{2} < y$.
+  \sqrt{2}$; i.e., $x < q - \sqrt{2} < y$.
 
   But it is easy to show that $q - \sqrt{2}$ cannot be a rational
   number: if it was a rational, then we would have $q - \sqrt{2} =
@@ -3402,13 +3402,13 @@ exchangeable here, so that showing only one direction will be enough.
     contradictions with this definition. What could be such
     contradictions? For instance, it could be the fact that there
     exists a greater number than $y$ in the set
-    $\{z \in \rr \, | \, z \geq 0, z^n \leq x \}$, i.e. that $y$ is
+    $\{z \in \rr \, | \, z \geq 0, z^n \leq x \}$, i.e., that $y$ is
     \emph{not} an upper bound. To show that, we must find a small
     number $\zeta > 0$ such that
     $(y+\zeta) \in \{z \in \rr \, | \, z \geq 0, z^n \leq x \}$, or in
     other words, $(y + \zeta)^n \leq x$. But another possible
     contradiction could be to show that $y$ is an upper bound but not
-    the \emph{least} upper bound, i.e. that there exists a small
+    the \emph{least} upper bound, i.e., that there exists a small
     number $0 < \epsilon < 1$ such that $y - \epsilon$ is also an
     upper bound of the set
     $\{z \in \rr \, | \, z \geq 0, z^n \leq x \}$.
@@ -3435,7 +3435,7 @@ exchangeable here, so that showing only one direction will be enough.
                              &\leq y^{n+1} + \epsilon \underbrace{(My + y^n +
                                M)}_{:= M'} \text{ (because $\epsilon < 1$)}
       \end{align*}
-      i.e. there exists also a natural number $M'$ such that
+      i.e., there exists also a natural number $M'$ such that
       $(y + \epsilon)^{n+1} \leq y^{n+1} + M' \epsilon$, which closes
       the induction. And thus, we have:
       $(y + \epsilon)^n \leq y^n + M\epsilon < y^n < x$, for some
@@ -3471,7 +3471,7 @@ exchangeable here, so that showing only one direction will be enough.
 
     Suppose that we have $y^n = x$. Since the $n$-th root is
     well-defined, the $n$-th roots of two equal numbers are also
-    equal, i.e. $\left(y^n \right)^{1/n} = x^{1/n}$. Now we can use
+    equal, i.e., $\left(y^n \right)^{1/n} = x^{1/n}$. Now we can use
     the insight from equation \eqref{eq:566a}. In one hand, we have
     $\left[\left(y^n \right)^{1/n}\right]^n = y^n$; and this is equal
     to $\left(x^{1/n}\right)^n$. But according to Proposition 4.3.12
@@ -3502,7 +3502,7 @@ exchangeable here, so that showing only one direction will be enough.
       \eqref{eq:566a}, we should have $x = \left(x^{1/n}\right)^n =
       0$, which is a contradiction.
     \end{itemize}
-    
+
   \item We have $x > y \Longleftrightarrow x^{1/n} > y^{1/n}$.
     \begin{itemize}
     \item First suppose that $x^{1/n} > y^{1/n}$. According to
@@ -3515,7 +3515,7 @@ exchangeable here, so that showing only one direction will be enough.
       contradiction that we have $x^{1/n} \leq y^{1/n}$. We would thus
       use Proposition 4.3.12(b) and equation \eqref{eq:566a} again and
       see that $\left(x^{1/n}\right)^n \leq \left(y^{1/n}\right)^n$,
-      i.e. that $x \leq y$, which is a contradiction. Thus we have
+      i.e., that $x \leq y$, which is a contradiction. Thus we have
       necessarily $x^{1/n} > y^{1/n}$.
     \end{itemize}
   \item If $x > 1$, then $x^{1/k}$ is a decreasing (i.e.
@@ -3534,9 +3534,9 @@ exchangeable here, so that showing only one direction will be enough.
       4.1.10). Let's suppose, for the sake of contradiction, that we
       have $x^{1/k} \geq x^{1/l}$. Thus, we should have
       $(x^{1/k})^{kl} \geq (x^{1/l})^{kl}$ according to Proposition
-      4.3.10(c), i.e. $x^l \geq x^k$ (we use equation \eqref{eq:566a}
+      4.3.10(c), i.e., $x^l \geq x^k$ (we use equation \eqref{eq:566a}
       for this latest claim). But this last inequality could be
-      written $x^l \geq x^{l+p}$, i.e. $1 \geq x^p$ by cancellation
+      written $x^l \geq x^{l+p}$, i.e., $1 \geq x^p$ by cancellation
       law. But this is a contradiction: if $x>1$, we cannot have
       $x^p \leq 1$ with $p$ a positive integer\footnote{Just perform a
         quick inductive proof if needed.}. Thus, $x^{1/k}$ is indeed a
@@ -3546,8 +3546,8 @@ exchangeable here, so that showing only one direction will be enough.
       have to show that $x^{1/k} > x^{1/l}$. A very similar proof
       applies. Let's suppose, for the sake of contradiction, that we
       have $x^{1/k} \leq x^{1/l}$. We should thus have
-      $(x^{1/k})^{kl} \leq (x^{1/l})^{kl}$, i.e. $x^l \leq x^k$. This
-      means that $x^l \leq x^{l+p}$, i.e. $1 \leq x^p$, which is
+      $(x^{1/k})^{kl} \leq (x^{1/l})^{kl}$, i.e., $x^l \leq x^k$. This
+      means that $x^l \leq x^{l+p}$, i.e., $1 \leq x^p$, which is
       impossible if $0<x<1$. This shows the contradiction and closes
       the proof.
     \end{itemize}
@@ -3615,7 +3615,7 @@ exchangeable here, so that showing only one direction will be enough.
       Thus, both expressions are equal, and this implies $x^{qr} =
       (x^q)^r$ according to Proposition 4.3.12(c).
     \end{itemize}
-    
+
   \item $x^{-q} = 1/x^q$.
 
     First, note that Definitions 4.3.11 and 5.6.2 only say that
@@ -3643,11 +3643,11 @@ exchangeable here, so that showing only one direction will be enough.
     \item If $x > y$, then $x^{1/b} > y^{1/b}$ according to Lemma
       5.6.6(d). And then, $(x^{1/b})^a > (y^{1/b})^a$ according to
       (the counterpart for real numbers of) Proposition 4.3.12(b),
-      i.e. $x^q > y^q$.
+      i.e., $x^q > y^q$.
     \item If $x^q > y^q$, then by definition,
       $(x^{1/b})^a > (y^{1/b})^a$, and both terms are positive. Thus,
       by Lemma 5.6.6(d), we have
-      $((x^{1/b})^a)^{1/a} > ((y^{1/b})^a)^{1/a}$, i.e. $x^{1/b} >
+      $((x^{1/b})^a)^{1/a} > ((y^{1/b})^a)^{1/a}$, i.e., $x^{1/b} >
       y^{1/b}$. And, by Proposition 4.3.12(b), $x = (x^{1/b})^b >
       (y^{1/b})^b = y$, as required.
     \end{itemize}
@@ -3673,14 +3673,14 @@ exchangeable here, so that showing only one direction will be enough.
     \begin{itemize}
     \item Let be $x > 1$. First suppose that $q > r$, and let's show
       that $x^q > x^r$. If $q > r$, then we have $a/b > a'/b'$,
-      i.e. $ab'/bb' > a'b/bb'$, i.e. $ab' > a'b$. Since both $ab'$ and
+      i.e., $ab'/bb' > a'b/bb'$, i.e., $ab' > a'b$. Since both $ab'$ and
       $a'b$ are integers and $x>1$, we thus have $x^{ab'} >
       x^{a'b}$. And, by Lemma 5.6.6(d), we have $(x^{ab'})^{1/bb'} >
-      (x^{a'b})^{1/bb'}$, i.e. $x^{ab'/bb'} > x^{a'b/bb'}$, and
+      (x^{a'b})^{1/bb'}$, i.e., $x^{ab'/bb'} > x^{a'b/bb'}$, and
       finally $x^q > x^r$ by Lemma 5.6.8.
 
       Now suppose that $x^q > x^r$ (note that both of them are
-      positive since $x > 1$), and let's show that $q > r$, i.e. that
+      positive since $x > 1$), and let's show that $q > r$, i.e., that
       $ab' > a'b$. Since we can also write $q = ab'/bb'$ and
       $r=a'b/bb'$ (and this does not affect the result by Lemma
       5.6.8), we have $x^{ab'} = (x^q)^{bb'} > (x^r)^{bb'} =
@@ -3689,9 +3689,9 @@ exchangeable here, so that showing only one direction will be enough.
       inequality, we obviously cannot have $ab'-ab' = 0$. We cannot
       have $ab' - a'b < 0$ either, because in this case, we would have
       $ab' - a'b = -n$ with $n$ a positive integer. I.e., we would
-      have $x^{-n}>1$, i.e. $1/x^n > 1$, a fact which is incompatible
+      have $x^{-n}>1$, i.e., $1/x^n > 1$, a fact which is incompatible
       with our initial hypothesis $x>1$. Thus, we only have one
-      possibility: $ab' - a'b > 0$, i.e. $q>r$.
+      possibility: $ab' - a'b > 0$, i.e., $q>r$.
     \item Let be $0 < x < 1$. Detailed proof is not given here, but is
       similar to the previous case.
     \end{itemize}
@@ -3721,7 +3721,7 @@ exchangeable here, so that showing only one direction will be enough.
   \item If $x=0$, we have $x^2 = 0$, and thus $(x^2)^{1/2} = 0$
     according to Lemma 5.6.6(c).
   \item If $x>0$, we have $(x^2)^{1/2} = x$ according to equation
-    \eqref{eq:566b}, i.e. Lemma 5.6.6(b).
+    \eqref{eq:566b}, i.e., Lemma 5.6.6(b).
   \item If $x<0$, then $-x > 0$. Also, we know that $x^2 = (-x)^2$ for
     every real $x$. Thus, $(x^2)^{1/2} = ((-x)^2)^{1/2} = -x$ as
     required, still by Lemma 5.6.6(b).
@@ -3741,13 +3741,13 @@ exchangeable here, so that showing only one direction will be enough.
   $a_{n+k} > a_n$ for all natural number $n$ and any $k > 0$.
 
   \begin{itemize}
-  \item The base case is $k = 1$, i.e. $m = n+1$. We must show here
+  \item The base case is $k = 1$, i.e., $m = n+1$. We must show here
     that $a_{n+1} > a_n$, but this is true by our initial hypothesis.
   \item Now suppose inductively that this is true for a certain
-    natural $k$, i.e. that we have $a_{n+k} > a_n$ for all $n$. We
+    natural $k$, i.e., that we have $a_{n+k} > a_n$ for all $n$. We
     have to show that we have $a_{n+k+1} > a_n$ for all $n$. But we
     know by our initial hypothesis that $a_{n+k+1} > a_{n+k}$, thus we
-    have $a_{n+k+1} > a_{n+k} > a_n$, i.e. by transitivity, $a_{n+k+1}
+    have $a_{n+k+1} > a_{n+k} > a_n$, i.e., by transitivity, $a_{n+k+1}
     > a_n$ as required. This closes the induction.
   \end{itemize}
 \end{exo}
@@ -3777,7 +3777,7 @@ exchangeable here, so that showing only one direction will be enough.
     $\seq{a_n}{m'}$ converges to $c$.}
 
   We will prove each part of this equivalence separately.
-  
+
   \begin{itemize}
   \item First, suppose that $\seq{a_n}{m'}$ converges to $c$. This
     means that, for every $\epsilon > 0$, there exists $N' \geq m'$
@@ -3817,7 +3817,7 @@ exchangeable here, so that showing only one direction will be enough.
     composition of functions, or intervals) that were very rarely used
     until now. The present proof is easier to write at this point of
     our knowledge.}
-  
+
   \begin{itemize}
   \item First, suppose that $\seq{a_n}{m}$ converges to $c$. Let
     $\epsilon > 0$ be a real number. We must show that there exists
@@ -3836,7 +3836,7 @@ exchangeable here, so that showing only one direction will be enough.
     $M \geq m$ such that
     $n \geq M \implies |a_{n+k} - c| \leq \epsilon$. Let be
     $N := M+k$. We can see that if $n \geq N$, we have $n \geq M+k$,
-    i.e. $n-k \geq M$, and thus $|a_{(n-k)+k} - c| \leq \epsilon$ as required. So,
+    i.e., $n-k \geq M$, and thus $|a_{(n-k)+k} - c| \leq \epsilon$ as required. So,
     $N := M+k$ is suitable, and $\seq{a_n}{m}$ converges to $c$.
   \end{itemize}
 \end{exo}
@@ -3862,12 +3862,12 @@ exchangeable here, so that showing only one direction will be enough.
 
   Thus, we have showed that there exists $N \geq m$ such that, for any
   natural numbers $j, k \geq N$, we have $|a_j - a_k| \leq \epsilon$.
-  This means that $\seq{a_n}{m}$ is indeed a Cauchy sequence.  
+  This means that $\seq{a_n}{m}$ is indeed a Cauchy sequence.
 \end{exo}
 
 \bigskip
 
-\begin{exo}{6.1.6}{Prove Proposition 6.1.15; i.e. that formal limits
+\begin{exo}{6.1.6}{Prove Proposition 6.1.15; i.e., that formal limits
     are genuine limits.}
 
   Let $\seq{a_n}{m}$ be a Cauchy sequence of real numbers, and
@@ -3875,7 +3875,7 @@ exchangeable here, so that showing only one direction will be enough.
   converges to $L$.
 
   Now we assume, for the sake of contradiction, that $\seq{a_n}{m}$ is
-  not eventually $\epsilon$-close to $L$, i.e. that there exists
+  not eventually $\epsilon$-close to $L$, i.e., that there exists
   $\epsilon > 0$ such that:
 
   \begin{equation}
@@ -3918,7 +3918,7 @@ exchangeable here, so that showing only one direction will be enough.
   \end{itemize}
 
   Thus, necessarily, $\seq{a_n}{m}$ is eventually $\epsilon$-close to
-  $L$ for any $\epsilon > 0$, i.e. $\seq{a_n}{m}$ converges to $L$.
+  $L$ for any $\epsilon > 0$, i.e., $\seq{a_n}{m}$ converges to $L$.
 \end{exo}
 
 \bigskip
@@ -4050,7 +4050,7 @@ exchangeable here, so that showing only one direction will be enough.
 
     Note that saying ``$\seq{b_n}{m}$ is bounded away from zero'', or
     $|b_n| \geq c$ for all $n \geq m$, means that $|1/b_n| \leq 1/c$,
-    i.e. that $\seq{1/b_n}{m}$ is bounded.
+    i.e., that $\seq{1/b_n}{m}$ is bounded.
 
     Let be $\epsilon > 0$ a positive real number. Since $\seq{b_n}{m}$
     converges to $y$, there exists a positive integer $N$ such that
@@ -4129,7 +4129,7 @@ exchangeable here, so that showing only one direction will be enough.
       $n \geq N$, we have $|\max(a_n, b_n) - y| \leq \epsilon$. Once
       again, we can combine the previous results to get:
       \[ y-\epsilon \leq b_n \leq \max(a_n, b_n) \leq \epsilon +y\]
-      i.e. $|\max(a_n, b_n) - y| \leq \epsilon$ as requested.
+      i.e., $|\max(a_n, b_n) - y| \leq \epsilon$ as requested.
     \end{itemize}
   \item Taking the inspiration in the way we defined the greatest
     lower bound from the least upper bound (Exercise 5.5.1), we could
@@ -4164,7 +4164,7 @@ exchangeable here, so that showing only one direction will be enough.
     real $\epsilon > 0$.}
 
   Following Tao's hint, we just adapt the proof of Proposition 6.1.4.
-  
+
   \begin{itemize}
   \item First suppose that $\seq{a_n}{0}$ and $\seq{b_n}{0}$ are
     eventually $\epsilon$-close for every real $\epsilon > 0$. In
@@ -4184,7 +4184,7 @@ exchangeable here, so that showing only one direction will be enough.
 \end{exo}
 
 \begin{exo}{6.2.1}{Prove Proposition 6.2.5.}
-  
+
   Hereafter, $x, y, z$ are extended real numbers. Thus, they can be
   either real numbers, or $\pm \infty$.
 
@@ -4289,10 +4289,10 @@ exchangeable here, so that showing only one direction will be enough.
       consequence. Indeed, if $x \in E$, then by definition, $-x \in
       -E$, and thus $-x \leq \sup(-E)$ according to our previous
       conclusions. And finally, $-x \leq \sup(-E)$ is equivalent to $x
-      \geq -\sup(-E)$, i.e. $x \geq \inf(E)$, according to Proposition
+      \geq -\sup(-E)$, i.e., $x \geq \inf(E)$, according to Proposition
       6.2.5(d) and the definition of the greatest lower bound.
     \end{itemize}
-    
+
   \item Suppose that $M \in \extrr$ is an upper bound for $E$, i.e.,
     $x \leq M$ for all $x \in E$. Then we have $\sup(E) \leq M$.
 
@@ -4323,7 +4323,7 @@ exchangeable here, so that showing only one direction will be enough.
     Then $\sup\seq{a_n}{1} = 1$ and $\inf \seq{a_n}{1} = 0$.}
 
   Let's prove those two statements separately.
-  
+
   \begin{itemize}
   \item First, note that $1$ is an upper bound for $\seq{a_n}{1}$:
     since $n \geq 1$, we always have $1/n \leq 1$. Furthermore, let
@@ -4337,7 +4337,7 @@ exchangeable here, so that showing only one direction will be enough.
     $\seq{a_n}{1}$. By definition, this means that $a_n \geq 0$ for
     all $n \geq 1$, and that $m > 0$. But according to the archimedean
     property with $\epsilon = 1$, there exists a natural number $N$
-    such that $mN \geq 1$, i.e. $m \geq 1/N$, that is to say $a_N \leq
+    such that $mN \geq 1$, i.e., $m \geq 1/N$, that is to say $a_N \leq
     m$. This is a contradiction, since $m$ is not a lower bound
     anymore. Thus, $0$ is indeed the greatest lower bound of
     $\seq{a_n}{1}$.
@@ -4439,17 +4439,17 @@ exchangeable here, so that showing only one direction will be enough.
   one. In this example, we begin with the statement: ``let $L$ be the
   limit $L = \limit{x^n}$'', and then we apply the limit laws (Theorem
   6.1.19) as if we were sure that $\seq{x^n}{1}$ is a convergent
-  sequence, i.e. that $L$ is a real number. But in the next steps of
+  sequence, i.e., that $L$ is a real number. But in the next steps of
   this example (where we take $x=-1$ or $x=2$), this is absolutely not
   the case: instead this sequence diverges. Thus, it was wrong to
   apply the limit laws, and the whole reasoning is flawed. It is only
-  correct in the case where $x\leq 1$, i.e. where $L = 0$ or $x=1$,
+  correct in the case where $x\leq 1$, i.e., where $L = 0$ or $x=1$,
   which is also a remark we make during this example.
 \end{exo}
 
 \bigskip
 \begin{exo}{6.4.1}{Prove Proposition 6.4.5.}
-  
+
   Let $\seq{a_n}{m}$ be a sequence of real numbers, which converges to
   $c$. There are two statements to prove.
 
@@ -4470,7 +4470,7 @@ exchangeable here, so that showing only one direction will be enough.
     Thus, any positive integer $n \geq \max(N, N')$ will do the trick,
     and in particular $n = \max(N, N')$: we will have $n \geq
     N$ and $|a_n - c|$ as required.
-    
+
   \item Now let's prove that $c$ is the \emph{only} limit point of
     $\seq{a_n}{m}$. Here, drawing a picture will help a lot. Let's
     suppose, for the sake of contradiction, that there exists another
@@ -4538,11 +4538,11 @@ exchangeable here, so that showing only one direction will be enough.
       $|a_n - c| \leq \epsilon$, as required. Else, if $m \leq N <
       m'$, then according to \eqref{eq:642a2}, there exists an $n \geq
       m'$ such that $|a_n -c| \leq \epsilon$. We thus have $m \leq N <
-      m' \leq n$, i.e. in particular $N < n'$, and $|a_n -c| \leq
+      m' \leq n$, i.e., in particular $N < n'$, and $|a_n -c| \leq
       \epsilon$, as required. Thus, in both sub-cases, $c$ is a limit
       point for $\seq{a_n}{m}$.
     \end{itemize}
-    
+
   \item Statement for limit superior: $\ell$ is the limit superior of
     $\seq{a_n}{m}$ iff $\ell$ is the limit superior of
     $\seq{a_n}{m'}$.
@@ -4579,7 +4579,7 @@ exchangeable here, so that showing only one direction will be enough.
   make the additional hypothesis that $L^-$ and $L^+$ are finite; the
   general case may need a painful split into cases depending on
   whether they are finite or not.
-  
+
   \begin{enumerate}[label=\emph{(\alph*)}]
     \setcounter{enumi}{2}
   \item Prove that $\inf \seq{a_n}{m} \leq L^- \leq L^+ \leq \sup
@@ -4640,7 +4640,7 @@ exchangeable here, so that showing only one direction will be enough.
     \end{equation}
     But equations \eqref{eq:642d1} and \eqref{eq:642d2} are
     incompatible, since they would lead to $a_n < \frac{2L^+ + c}{3} <
-    \frac{2c+L^+}{3} < a_n$, i.e. $a_n < a_n$. Thus, our starting
+    \frac{2c+L^+}{3} < a_n$, i.e., $a_n < a_n$. Thus, our starting
     hypothesis $c \leq L^+$ is false, and we have necessarily $c >
     L^+$ as required.
   \item Prove that if $L^+$ is finite, then it is a limit point of
@@ -4665,7 +4665,7 @@ exchangeable here, so that showing only one direction will be enough.
     $|a_n - L^+| \leq \epsilon$. $L^+$ is thus a limit point, as
     required.
 
-    
+
   \item Prove that $\seq{a_n}{m}$ converges to $c$ iff $L^+ = L^- =
     c$.
 
@@ -4685,9 +4685,9 @@ exchangeable here, so that showing only one direction will be enough.
       Similarly, since $y = L^- - \epsilon = c - \epsilon < L^-$, then
       there exists $N' \geq m$ such that $a_n > c - \epsilon$ for all
       $n \geq N'$.
-      
+
       Thus, for all $n \geq \max(N,N')$, we have $c - \epsilon < a_n <
-      c + \epsilon$, i.e. $|a_n -c| \leq \epsilon$. This means that
+      c + \epsilon$, i.e., $|a_n -c| \leq \epsilon$. This means that
       $\seq{a_n}{m}$ converges to $c$.
     \item Conversely, let's suppose that $\seq{a_n}{m}$ converges to
       $c$.
@@ -4764,7 +4764,7 @@ exchangeable here, so that showing only one direction will be enough.
   $L$.
 
   Thus, still according to Proposition 6.4.12(f), $\seq{b_n}{m}$
-  converges to $L$, as required.  
+  converges to $L$, as required.
 \end{exo}
 
 \bigskip
@@ -4788,7 +4788,7 @@ exchangeable here, so that showing only one direction will be enough.
   This corollary says that $\seq{a_n}{m}$ converges to $0$ iff
   $\seq{|a_n|}{m}$ converges to $0$. Let's denote $b_n = |a_n|$ in
   what follows.
-  
+
   \begin{itemize}
   \item First suppose that $\limit{|a_n|} = 0$. We know that we have,
     for all $n \geq m$, $-|a_n| \leq a_n \leq |a_n|$. According to the
@@ -4810,7 +4810,7 @@ exchangeable here, so that showing only one direction will be enough.
   rewrite $1/n^q = (1/n)^q = (1/n)^{a/b} = ((1/n)^{1/b})^a$, using in
   particular Definition 5.6.7, and in a somewhat hidden manner,
   equation \eqref{eq:562e} from this document.
-  
+
   Using Corollary 6.5.1, we know that $\limit{1/n^{1/k}} = 0$ for
   every integer $k \geq 1$. In particular, we have
   $\limit{(1/n)^{1/b}} = \limit{(1/n^{1/b})} = 0$. Thus, using the
@@ -4879,15 +4879,15 @@ exchangeable here, so that showing only one direction will be enough.
   \begin{enumerate}
   \item If $x \geq 1$, we have $x^{1/n} > 1$ for all $n \geq 1$
     (because if we suppose, for the sake of contradiction, that
-    $x^{1/n} < 1$, we would have $(x^{1/n})^n < 1^n$, i.e. $x<1$).
+    $x^{1/n} < 1$, we would have $(x^{1/n})^n < 1^n$, i.e., $x<1$).
     Thus, we have $0 < x^{1/n} - 1$ for all $n \geq 1$. Furthermore,
     according to the preliminary result, there exists an $N$ such that
     $x^{1/n}-1 \leq \epsilon$ for all $n \geq N$. We thus have $-
     \epsilon \leq 0 \leq x^{1/n} - 1 \leq \epsilon$ for all $n \geq N$,
-    i.e. $|x^{1/n} - 1| \leq \epsilon$ for all $n \geq N$. This means
+    i.e., $|x^{1/n} - 1| \leq \epsilon$ for all $n \geq N$. This means
     that $\limit{x^{1/n}} = 1$, as required.
   \item If $x < 1$, we have $1/x > 1$. Thus, when considering $1/x$,
-    we are back to the previous case, i.e. we have
+    we are back to the previous case, i.e., we have
     $\limit{(1/x)^{1/n}} = 1$. But, by Lemma 5.6.9(b), we have
     $(1/x)^{1/n} = (x^{-1})^{1/n} = x^{-1/n} = 1/x^{1/n}$. Thus, we
     have $\limit{1/x^{1/n}} = 1$. Finally, by the limit laws (Theorem
@@ -4904,7 +4904,7 @@ exchangeable here, so that showing only one direction will be enough.
   \item Let's show that $\seq{a_n}{1}$ is a subsequence of
     $\seq{a_n}{1}$. This is obvious: let's take the strictly
     increasing function $f(n) = n$ for all $n \in \nn^*$: this will
-    indeed give $a_n = a_{f(n)}$, i.e. $\seq{a_n}{1}$ as a subsequence
+    indeed give $a_n = a_{f(n)}$, i.e., $\seq{a_n}{1}$ as a subsequence
     of $\seq{a_n}{1}$.
   \item Now consider that $\seq{b_n}{1}$ is a subsequence of
     $\seq{a_n}{1}$, and that $\seq{c_n}{1}$ is a subsequence of
@@ -4913,7 +4913,7 @@ exchangeable here, so that showing only one direction will be enough.
     increasing functions from $\nn^*$ to $\nn^*$. The function
     $f \circ g$ is also strictly increasing, as the composition of two
     strictly increasing functions. Thus, we have $c_n = b_{g(n)} =
-    a_{f\circ g(n)}$ for all $n \in \nn^*$, i.e. $\seq{c_n}{1}$ as a
+    a_{f\circ g(n)}$ for all $n \in \nn^*$, i.e., $\seq{c_n}{1}$ as a
     subsequence of $\seq{a_n}{1}$.
   \end{itemize}
 \end{exo}
@@ -5014,7 +5014,7 @@ exchangeable here, so that showing only one direction will be enough.
     $\epsilon > 1/j > 0$.
 
     Finally, let be a natural number $k > j$: we thus have $|a_{n_k}|
-    \geq k > j$, i.e. $1/|a_{n_k}| < 1/j$.
+    \geq k > j$, i.e., $1/|a_{n_k}| < 1/j$.
 
     Thus, unwrapping all these findings: for any $\epsilon > 0$, there
     exists a natural number $j$ such that, for any $k > j$, we have
@@ -5035,10 +5035,10 @@ exchangeable here, so that showing only one direction will be enough.
     because $f(0) \in \nn$;
   \item now suppose inductively that $f(n) \geq n$. Since $f$ is
     strictly increasing, we have $f(n+1) > f(n) \geq n$, and thus,
-    $f(n+1) > n$, i.e. $f(n+1) \geq n+1$. This closes the induction
+    $f(n+1) > n$, i.e., $f(n+1) \geq n+1$. This closes the induction
     for this preliminary result.
   \end{itemize}
- 
+
   For the exercise itself, we must prove that the two statements ``The
   sequence $\seq{a_n}{0}$ converges to $L$'' and ``Every subsequence
   of $\seq{a_n}{0}$ converges to $L$'' are equivalent.
@@ -5048,7 +5048,7 @@ exchangeable here, so that showing only one direction will be enough.
     converges to $L$. According to Lemma 6.6.4, $\seq{a_n}{0}$ is a
     subsequence of $\seq{a_n}{0}$, thus in particular, $\seq{a_n}{0}$
     converges to $L$.
-    
+
   \item Now suppose that the sequence $\seq{a_n}{0}$ converges to $L$.
     Let be $\epsilon > 0$, and $f : \nn \to \nn$ a strictly
     increasing function such that $\seq{a_{f(n)}}{0}$ is a subsequence
@@ -5090,7 +5090,7 @@ exchangeable here, so that showing only one direction will be enough.
   \item First we show that (b) implies (a). Let be $f : \nn
     \to \nn$ a strictly increasing function such that
     $\seq{a_{f(n)}}{0}$ converges to $L$. We must show that $L$ is a
-    limit point of $\seq{a_n}{0}$, i.e. that:
+    limit point of $\seq{a_n}{0}$, i.e., that:
     \begin{equation}
       \label{eq:665a}
       \forall \epsilon > 0, \, \forall N \geq 0, \, \exists n \geq N \;
@@ -5149,7 +5149,7 @@ exchangeable here, so that showing only one direction will be enough.
       \end{equation}
       which means that the subsequence $\seq{a_{f(n)}}{0}$ converges
       to $0$, as required.
-    \end{itemize}    
+    \end{itemize}
   \end{enumerate}
 \end{exo}
 
@@ -5191,7 +5191,7 @@ exchangeable here, so that showing only one direction will be enough.
     \end{align*}
     which closes the induction and proves the equality for all
     integers $m \leq n \leq p$.
-    
+
   \item For $k$ an integer, and $m \leq n$ two integers, we have
     $\sum_{i=m}^{n}a_i = \sum_{j=m+k}^{n+k} a_{j-k}$.
 
@@ -5414,13 +5414,13 @@ exchangeable here, so that showing only one direction will be enough.
       & \text{(Lemma 7.1.4(c))} \\
       & := \sum_{x \in X} f(x) + \sum_{x \in X} g(x)
     \end{align*}
-    
+
   \item If $c$ is a real number, the we have $\sum_{x \in X} cf(x) = c
     \sum_{x \in X} f(x)$.
 
     If we define a function $g$ as $g(x) := cf(x)$, and $h$ a
     bijection $\intset{1}{n} \to X$, we have:
-    
+
     \begin{align*}
       \sum_{x \in X} cf(x)
       &= \sum_{x \in X} g(x) = \sum_{i=1}^{n} g(h(i)) = \sum_{i=1}^n cf(h(i)) \\
@@ -5462,7 +5462,7 @@ exchangeable here, so that showing only one direction will be enough.
   By mimicking Definitions 7.1.1 and 7.1.6, we can form the following
   definitions for finite products $\prod_{i=m}^n a_i$, and products over
   finite sets $\prod_{x \in X} f(x)$ (where $X$ is finite).
-  
+
   \begin{enumerate}[label=(\roman*)]
   \item Let $m,n$ be integers, and let $(a_i)_{i=m}^n$ be a finite
     sequence of real numbers. We define the finite product
@@ -5473,7 +5473,7 @@ exchangeable here, so that showing only one direction will be enough.
       \prod_{i=m}^{n+1} a_i &:= \left(\prod_{i=m}^n a_i\right) \times a_{n+1}
       &\text{ whenever } n \geq m-1.
     \end{align*}
-    
+
   \item Let $X$ be a finite set of $n$ elements, $f : X \to \rr$ be
     function, and $g$ a bijection from
     $\{i \in \nn : 1 \leq i \leq n\}$ to $X$. We thus define
@@ -5566,7 +5566,7 @@ exchangeable here, so that showing only one direction will be enough.
   Let's induct on $r$, the cardinality of $X$.
 
   \begin{itemize}
-  \item We start with the base case $r=0$, i.e. $X = \emptyset$. In
+  \item We start with the base case $r=0$, i.e., $X = \emptyset$. In
     this case, by Proposition 7.1.11(a), we have immediately
     $\sum_{x \in X} a_n(x) = 0$, so that $\limit{\sum_{x \in X}
       a_n(x)} = 0$ as the limit of a constant sequence. Similarly, we
@@ -5609,7 +5609,7 @@ exchangeable here, so that showing only one direction will be enough.
   note that ${S_1 = -1}$, $S_2 = 0$, $S_3 = -1$, etc. More generally,
   a quick induction shows that $S_{2K-1} = -1$ et $S_{2K} = 0$ for all
   $K \geq 0$.
-  
+
   It is thus clear that the limit superior $L^+$ of
   $(S_N)_{N=1}^\infty$ is equal to $0$, and that its limit inferior
   $L^-$ is equal to $-1$ (why?). Thus, since $L^+ \neq L^-$, the sequence
@@ -5638,7 +5638,7 @@ exchangeable here, so that showing only one direction will be enough.
   converges iff the sequence of its partial sums $(S_N)_{N=m}^\infty$ is a
   Cauchy sequence. Proposition 6.1.12 and Theorem 6.4.18 immediately
   provide this equivalence.
-  
+
 \end{exo}
 
 \bigskip
@@ -5721,7 +5721,7 @@ exchangeable here, so that showing only one direction will be enough.
     b_n$ by Lemma 7.1.4(c). It means that the partial sum of the
     formal series $\sum_{n=m}^\infty a_n + b_n$ converges to $x+y$, so
     that we have proved the result.
-    
+
   \item The proof would be very similar to the previous one; just use
     Lemma 7.1.4(d) and Theorem 6.1.19(c) instead.
 
@@ -5734,7 +5734,7 @@ exchangeable here, so that showing only one direction will be enough.
     general fact (not shown in the book, but easy to prove), the
     sequence $(S_N)_{N=m}^\infty$ converges to $L$ iff the sequence
     $(T_N)_{N=m}^\infty$ converges to $L-x$. The statement follows.
-    
+
   \item Let be $\epsilon > 0$ a positive real number. Since the formal
     series $\sum_{n=m}^{\infty}a_n$ converges to $x$, there exists a
     positive integer $M$ such that
@@ -5747,7 +5747,7 @@ exchangeable here, so that showing only one direction will be enough.
     all $N \geq M'$, we have $|\sum_{n=m+k}^{N} a_{n-k} - x| \leq
     \epsilon$, which means that $\sum_{n=m+k}^{\infty}a_{n-k}$ also
     converges to $x$.
-  \end{enumerate}  
+  \end{enumerate}
 \end{exo}
 
 \begin{exo}{7.2.6}{Prove Lemma 7.2.15.}
@@ -5782,7 +5782,7 @@ exchangeable here, so that showing only one direction will be enough.
   |a_0 - a_{N+1} - a_0| = |a_{N+1}|$. Thus, there exists a positive
   integer $M' := M-1$ such that, for all $N \geq M'$, we have $|S_N -
   a_0| \leq \epsilon$. This means that $(S_N)_{N = 0}^\infty$
-  converges to $a_0$, i.e. that the formal series
+  converges to $a_0$, i.e., that the formal series
   $\sum_{n=0}^{\infty}(a_n - a_{n+1})$ converges to $a_0$, as required.
 \end{exo}
 \bigskip
@@ -5828,7 +5828,7 @@ exchangeable here, so that showing only one direction will be enough.
     \sum_{n=m}^{\infty}|a_n|$, as required.
 
     This closes the proof.
-  \end{itemize}  
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{7.3.2}{Prove Lemma 7.3.3.}
@@ -5903,12 +5903,12 @@ exchangeable here, so that showing only one direction will be enough.
     that there exists a bijection $f : Y \to X$ between $X$ and a
     proper subset $Y \subsetneq X$. For the sake of contradiction,
     let's suppose that $X$ is finite. Then, by
-    definition\footnote{This is Definition 3.6.10, i.e. the definition
+    definition\footnote{This is Definition 3.6.10, i.e., the definition
       of Cantor-finite sets.}, there exists $n \in \nn$ such that
     $\# X = n$. On the one hand, since $Y$ is a proper subset of $X$,
     by Proposition 3.6.14 (c), we must have $\#Y < \#X$, i.e.
     $\#Y < n$. On the other hand, since $f$ is a bijection, $X$ and
-    $Y$ have the same cardinality, i.e. $\#Y = \#X = n$. Thus we have
+    $Y$ have the same cardinality, i.e., $\#Y = \#X = n$. Thus we have
     a contradiction; $X$ cannot be finite.
   \item Conversely, suppose that $X$ is infinite, and let's show that
     we can construct a bijection $f: X \to Y$ from $X$ to a proper
@@ -5943,11 +5943,11 @@ exchangeable here, so that showing only one direction will be enough.
     One can clearly see that $f$ is a surjection, and also an
     injection. This closes the proof.
   \end{itemize}
-  
+
 \end{exo}
 
 \begin{exo}{8.1.2}{Prove Proposition 8.1.4. (Hint: you can either use
-    induction, or use the principle of inﬁnite descent, Exercise
+    induction, or use the principle of infinite descent, Exercise
     4.4.2, or use the least upper bound (or greatest lower bound)
     principle, Theorem 5.5.9.) Does the well-ordering principle work
     if we replace the natural numbers by the integers? What if we
@@ -5964,8 +5964,8 @@ exchangeable here, so that showing only one direction will be enough.
   \begin{itemize}
   \item Let's start with the base case $n=1$ (note that the base case
     is not $n=0$, since $X$ is supposed to be non-empty). In such a
-    case, $X$ is a singleton, i.e. there exists $n \in \nn$ such that
-    $X = \{n\}$. By reflexivity, we have of course $n \leq n$, i.e. we
+    case, $X$ is a singleton, i.e., there exists $n \in \nn$ such that
+    $X = \{n\}$. By reflexivity, we have of course $n \leq n$, i.e., we
     have $n \leq m$ for all $m \in X$, as required.
   \item Now suppose inductively that the property is true for a
     cardinality of $p$, and let's show that it is still true if
@@ -6023,7 +6023,7 @@ exchangeable here, so that showing only one direction will be enough.
     $n$. Consequently, $\min A_{n+1} \geq \min A_n$ for all $n$; i.e.
     $a_{n+1} \geq a_n$ for all $n$. Furthermore, by definition,
     $a_{n+1} \neq a_n$, so that we finally have $a_{n+1} > a_n$ for
-    all $n$, i.e. $\seq{a_n}{0}$ is a strictly increasing sequence.    
+    all $n$, i.e., $\seq{a_n}{0}$ is a strictly increasing sequence.
 
   \item Show that $a_n \neq a_m$ for all $n \neq m$.
 
@@ -6039,16 +6039,16 @@ exchangeable here, so that showing only one direction will be enough.
     if $X \subset \nn$.
 
   \item Obvious statement, simple rephrasing of the definition.
-    
+
   \item Show that $a_n \geq n$ for all $n$.
 
     This can be shown by a simple induction: $\seq{a_n}{0}$ is a
     strictly increasing sequence of natural numbers, so that $a_0 \geq
     0$ (base case), and if we suppose inductively that $a_n \geq n$,
-    we thus have $a_{n+1} > a_n \geq n$, i.e. $a_{n+1} \geq n+1$. This
+    we thus have $a_{n+1} > a_n \geq n$, i.e., $a_{n+1} \geq n+1$. This
     closes the induction.
   \end{enumerate}
-  
+
 \end{exo}
 
 \begin{exo}{8.1.4}{Prove Proposition 8.1.8.}
@@ -6108,7 +6108,7 @@ exchangeable here, so that showing only one direction will be enough.
   function $g : \nn \to X$. Let's consider the function
   $h = f \circ g$, which is a function from $\nn$ to $Y$. We will show
   that $f(X) = h(\nn)$.
-  
+
   \begin{itemize}
   \item First, $f(X) \subseteq h(\nn)$. Indeed, let be $y \in f(X)$.
     By definition, there exists $x \in X$ such that $y = f(x)$. But
@@ -6184,7 +6184,7 @@ exchangeable here, so that showing only one direction will be enough.
   In this case, $X \cup Y$ is a finite set. By Proposition 3.6.14(c),
   $X$ is also finite, as a subset of a finite set. This is a clear
   contradiction with our initial hypothesis that $X$ is countably
-  infinite. Thus, $h(\nn) = X \cup Y$ is countable, as required.  
+  infinite. Thus, $h(\nn) = X \cup Y$ is countable, as required.
 \end{exo}
 
 \bigskip
@@ -6201,7 +6201,7 @@ exchangeable here, so that showing only one direction will be enough.
 
   \begin{itemize}
   \item $h$ is injective: if we suppose that $h(x, y) = h(x', y')$,
-    then we have $(f(x), g(y)) = (f(x'), g(y'))$, i.e. $f(x) = f(x')$
+    then we have $(f(x), g(y)) = (f(x'), g(y'))$, i.e., $f(x) = f(x')$
     and $g(y) = g(y')$. Since $f$ and $g$ are bijective, this implies
     $x=x'$ and $y=y'$, so that $h$ is injective.
   \item $h$ is also surjective because $f$ and $g$ are surjective: for
@@ -6229,7 +6229,7 @@ exchangeable here, so that showing only one direction will be enough.
   even trickier; for instance:
   \begin{itemize}
   \item the sets $I$ and $A_\alpha$ are said to be \emph{at most}
-    countable, i.e. either finite or countably infinite: do we have to
+    countable, i.e., either finite or countably infinite: do we have to
     handle those cases separately?
   \item intuitively and informally, we have actually a denumerable
     sequence of sets, and in each set, we can also count the elements.
@@ -6285,7 +6285,7 @@ exchangeable here, so that showing only one direction will be enough.
     defined above. $\theta$ is injective since $n$ is uniquely defined
     and $f_n$ is injective. Thus, $\bigcup_{m \in N} A_{g(m)}$ is at
     most countable, as required.
-  \end{itemize}  
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{8.2.1}{Prove Lemma 8.2.3.}
@@ -6324,7 +6324,7 @@ exchangeable here, so that showing only one direction will be enough.
     $\sup (S_N)_{N=0}^\infty < \infty$, which means that
     $(S_N)_{N=0}^\infty$ converges. It means that
     $\sum_{n=0}^{\infty} |f(g(n))|$ converges for some bijection
-    $g : \nn \to X$, i.e. that $\sum_{x \in X} f(x)$ is
+    $g : \nn \to X$, i.e., that $\sum_{x \in X} f(x)$ is
     absolutely convergent by Definition 8.2.1.
   \item Now suppose that $\sum_{x \in X} f(x)$ is absolutely
     convergent and let's show that we have
@@ -6358,7 +6358,7 @@ exchangeable here, so that showing only one direction will be enough.
     $A$ of $X$.
 
     Finally, our initial hypothesis was that $\sum_{x \in X} f(x)$ is
-    absolutely convergent, i.e. that $\sum_{x \in X} |f(x)|$ is a
+    absolutely convergent, i.e., that $\sum_{x \in X} |f(x)|$ is a
     (positive) real number $M$. Thus, there exists $M \in \rr$ such
     that $\sum_{x \in A} |f(x)| \leq M$, which is equivalent to
     $\sup\left\{ \sum_{x \in A} |f(x)| \, : \, A \subseteq X, \text{
@@ -6411,7 +6411,7 @@ exchangeable here, so that showing only one direction will be enough.
     \end{equation}
     On the one hand, if $x \in A$, then $f(x) \neq 0$, and in
     particular $|f(x)| > 0$. By Exercise 5.4.4, there exists a
-    positive integer $m$ such that $|f(x)| > 1/m > 0$, i.e. such that
+    positive integer $m$ such that $|f(x)| > 1/m > 0$, i.e., such that
     $x \in A_m$.
 
     Conversely, if $x \in \bigcup_{n=1}^\infty A_n$, then by
@@ -6460,7 +6460,7 @@ exchangeable here, so that showing only one direction will be enough.
     $\sum_{x \in A} |cf(x)| \leq |c| \sum_{x \in A} |f(x)| \leq
     |c|M_f$. It means that the set
     $\{\sum_{x \in A} |cf(x)| \, : \, A \subseteq X, A \text{ finite}
-      \}$ is bounded, i.e. that $\sum_{x \in X} cf(x)$ is absolutely
+      \}$ is bounded, i.e., that $\sum_{x \in X} cf(x)$ is absolutely
       convergent. Now consider several cases.
 
     If $c=0$ there is almost nothing to prove. On the one hand, we
@@ -6515,7 +6515,7 @@ exchangeable here, so that showing only one direction will be enough.
   conditionally convergent.
 
   We'll use a proof by contradiction.
-  
+
   \begin{itemize}
   \item First, we are going to suppose something which is a little too
     strong: let's suppose that \emph{both} $\sum_{n \in A_+} a_n$ and
@@ -6571,7 +6571,7 @@ exchangeable here, so that showing only one direction will be enough.
     In particular, we have shown that whenever $\sum_{n \in A_+}a_n$
     is convergent, the other series $\sum_{n \in A_-}a_n$ is also
     convergent, as expected. This closes the proof.
-  \end{itemize} 
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{8.3.1}{Let $X$ be a finite set of cardinality $n$. Show
@@ -6582,7 +6582,7 @@ exchangeable here, so that showing only one direction will be enough.
   \begin{itemize}
   \item For the base case, if $n=0$, $X$ is simply the empty set. In
     such a case, $2^\emptyset = \{\emptyset\}$ has indeed one single
-    element, i.e. has a cardinality of $2^0 = 1$, and is thus finite.
+    element, i.e., has a cardinality of $2^0 = 1$, and is thus finite.
   \item Now suppose inductively that $2^X$ has $2^n$ elements if $X$
     has $n$ elements, and let's show that this property still holds
     for $n+1$.
@@ -6600,7 +6600,7 @@ exchangeable here, so that showing only one direction will be enough.
     2^A\}$. By the induction hypothesis, $2^A$ has cardinality $2^n$,
     so that, by Proposition 3.6.14(b), we have
     $\#X = 2^n + 2^n = 2^{n+1}$, as expected.
-  \end{itemize}  
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{8.5.2}{Give examples of a set $X$ and a relation $\leq_X$
@@ -6649,7 +6649,7 @@ exchangeable here, so that showing only one direction will be enough.
   \item It is anti-symmetric because if we suppose that $n|m$, we must
     have $m=na$ for some positive integer $a$. Similarly, if we have
     $m|n$, we must have $n=mb$ for some positive integer $b$.
-    Gathering these two statements, we get $n = n(ab)$, i.e. $ab=1$ by
+    Gathering these two statements, we get $n = n(ab)$, i.e., $ab=1$ by
     cancellation law (Corollary 2.3.7). The only possibility for
     $ab=1$ on the natural numbers is that  both $a=1$ and $b=1$, as a
     quick proof by contradiction would show. Thus, we have $n=mb=m$,
@@ -6660,7 +6660,7 @@ exchangeable here, so that showing only one direction will be enough.
   \end{itemize}
 
   However, this does not define a totally ordered set, since we have
-  neither $2|3$ nor $3|2$.  
+  neither $2|3$ nor $3|2$.
 \end{exo}
 
 \bigskip
@@ -6672,9 +6672,9 @@ exchangeable here, so that showing only one direction will be enough.
   \rr_+$ such that $m = \min(\rr_+)$. Obviously, we must have $m < 1$,
   since there exists elements such as $1/2 \in \rr_+$. Let's apply the
   Archimedean property with $x = 1$: there exists a positive integer
-  $M$ such that $Mm > 1$, i.e. such that $1/M < m$. But $1/M$ is a
+  $M$ such that $Mm > 1$, i.e., such that $1/M < m$. But $1/M$ is a
   positive rational number, thus a positive real number, which is a
-  contradiction.  
+  contradiction.
 \end{exo}
 
 \bigskip
@@ -6823,7 +6823,7 @@ exchangeable here, so that showing only one direction will be enough.
   \[Y := \{ n \in X \, : \, P(m) \text{ is false for some $m \in X$
       with } m \leq n\}\]
   is non-empty. Since $X$ is totally ordered, there exists a minimal
-  element $M$ in $Y$, i.e. there exists some $M := \min(Y)$. In
+  element $M$ in $Y$, i.e., there exists some $M := \min(Y)$. In
   particular, $M$ is the lowest element of $X$ for which $P(M)$ is
   false.
 
@@ -6836,7 +6836,7 @@ exchangeable here, so that showing only one direction will be enough.
   By our initial hypothesis, it would thus imply that $P(M)$ is true;
   a contradiction.
 
-  Thus, $Y$ is empty, and $P(n)$ is true for all $n \in X$.  
+  Thus, $Y$ is empty, and $P(n)$ is true for all $n \in X$.
 \end{exo}
 
 \pagebreak
@@ -6847,7 +6847,7 @@ exchangeable here, so that showing only one direction will be enough.
 
   We will show that we have $\adh{X} \subseteq \adh{Y}$, and $\adh{Y}
   \subseteq \adh{X}$. Let be $\epsilon > 0$ a positive real number.
-  
+
   \begin{itemize}
   \item Let be $x' \in \adh{X}$. By definition, there exists $x \in X$
     such that $|x - x'| \leq \epsilon$. But since $X \subseteq Y$, we
@@ -6867,24 +6867,24 @@ exchangeable here, so that showing only one direction will be enough.
 \end{exo}
 
 \begin{exo}{9.1.2}{Prove Lemma 9.1.11.}
-  
+
   Let $X$ and $Y$ be subsets of $\rr$.
-  
+
   \begin{itemize}
   \item Prove that $X \subseteq \adh{X}$. If $x \in X$, then for any
     $\epsilon > 0$ we always have an $y \in X$ such that $|x-y| \leq
     \epsilon$: let's take $y=x$, so that $|x-y| = 0 \leq \epsilon$.
-    
+
   \item Prove that $\adh{X \cap Y} \subseteq \adh{X} \cap \adh{Y}$.
     Let be $\epsilon > 0$ a real number, and $z' \in \adh{X \cap Y}$.
     By definition, there exists $z \in X \cap Y$ such that
     $|z'-z| \leq \epsilon$. We have $z \in X$ and $z \in Y$. Thus, for
     an arbitrary $\epsilon > 0$, we have found a $z \in X$ such that
-    $|z'-z| \leq \epsilon$, i.e. $z' \in \adh{X}$. Similarly,
+    $|z'-z| \leq \epsilon$, i.e., $z' \in \adh{X}$. Similarly,
     $z' \in \adh{Y}$. Thus, $z' \in \adh{X} \cap \adh{Y}$. Thus, we
     have proved $\adh{X \cap Y} \subseteq \adh{X} \cap \adh{Y}$ as
     required.
-    
+
   \item Prove that $\adh{X \cup Y} = \adh{X} \cup \adh{Y}$. Let be
     $\epsilon > 0$ a positive real number, and
     $z' \in \adh{X} \cup \adh{Y}$. We have either $z' \in \adh{X}$ or
@@ -6903,12 +6903,12 @@ exchangeable here, so that showing only one direction will be enough.
     such that $|z' - y| > \gamma$ for all $y \in Y$. We conclude that,
     for $\epsilon := \min(\delta, \gamma)$, we have $|z'-x| >
     \epsilon$ for all $x \in X$ and $|z'-y| > \epsilon$ for all $y \in
-    Y$; i.e. that $|z'-z| > \epsilon$ for all $z \in X \cup Y$. Thus,
+    Y$; i.e., that $|z'-z| > \epsilon$ for all $z \in X \cup Y$. Thus,
     $z \notin \adh{X \cup Y}$, which obviously contradicts our initial
     hypothesis. It means that whenever $z' \in \adh{X \cup Y}$, we
-    have $z' \in \adh{X} \cup \adh{Y}$, i.e. $\adh{X \cup Y} \subseteq
+    have $z' \in \adh{X} \cup \adh{Y}$, i.e., $\adh{X \cup Y} \subseteq
     \adh{X} \cup \adh{Y}$ as required.
-    
+
   \item Prove that if $X \subseteq Y$, then $\adh{X} \subseteq
     \adh{Y}$. Let be $x' \in \adh{X}$, and $\epsilon > 0$ a real
     number. By definition, there exists $x \in X$ such that $|x'-x|
@@ -6943,7 +6943,7 @@ exchangeable here, so that showing only one direction will be enough.
     already know that $\nn \subseteq \adh{\nn}$, so that we just have
     to show that $\adh{\nn} \subseteq \nn$. Let be $n \in
     \adh{\nn}$. Suppose, for the sake of contradiction, that $n
-    \notin \nn$, i.e. that $n \in \rr \backslash \nn$. By Exercise
+    \notin \nn$, i.e., that $n \in \rr \backslash \nn$. By Exercise
     5.4.3, there exists an integer $m$ such that $m \leq n < m+1$. Let
     be $d_1 = |m-n| > 0$, which is a positive real number since $n
     \notin \nn$ and $m \in \nn$. Similarly, let be $d_2 := |n - (m+1)|
@@ -6958,7 +6958,7 @@ exchangeable here, so that showing only one direction will be enough.
     \rr$. So, let be $z \in \rr$, and let's show that $z \in
     \adh{\qq}$. Let be $\epsilon > 0$ a positive real number. By
     Proposition 5.4.14, there always exists a rational $y \in \qq$
-    such that $z-\epsilon < y < z+\epsilon$, i.e. such that $|y-z| <
+    such that $z-\epsilon < y < z+\epsilon$, i.e., such that $|y-z| <
     \epsilon$. Thus, $z$ is $\epsilon$-adhrent to $\qq$ for any
     $\epsilon > 0$. This means that $z \in \adh{\qq}$, as expected.
   \end{enumerate}
@@ -6998,7 +6998,7 @@ exchangeable here, so that showing only one direction will be enough.
   \item Now prove that (b) implies (a). Let be $\ell \in \adh{X}$. For
     any given positive integer $n$, let be the set
     $A_n := \{ x \in X \, : \, |x - \ell| \leq 1/n\}$. By definition,
-    $A_n$ is non empty for all $n \geq 1$, i.e. there exists a real
+    $A_n$ is non empty for all $n \geq 1$, i.e., there exists a real
     number $a_n \in A_n$ for all $n \geq 1$. By the axiom of choice,
     we can thus define a sequence $\seq{a_n}{1}$ where $a_n \in A_n$
     for all $n \geq 1$. This means that for all $n \geq 1$, we have
@@ -7025,11 +7025,11 @@ exchangeable here, so that showing only one direction will be enough.
   \epsilon$, which show that $x'' \in \adh{X}$, and thus that
   $\adh{\adh{X}} \subseteq \adh{X}$, as expected.
 
-  Now let be $Y$ a closed set, i.e. a set such that $Y = \adh{Y}$. By
+  Now let be $Y$ a closed set, i.e., a set such that $Y = \adh{Y}$. By
   Lemma 9.1.11, if $X \subseteq Y$, then we have
   $\adh{X} \subseteq \adh{Y}$. But since $\adh{Y} = Y$, we have
   $\adh{X} \subseteq Y$, as expected. Thus, $\adh{Y}$ is the smallest
-  closed set that contains $X$.  
+  closed set that contains $X$.
 \end{exo}
 
 \bigskip
@@ -7152,7 +7152,7 @@ exchangeable here, so that showing only one direction will be enough.
   have $\inf(X) = a$ and $\sup(X) = b$ for some real numbers $a,b$. By
   definition, we have $a \leq x \leq b$ for all $x \in X$. It means
   that $X \subseteq [a,b]$. Let's pick $M := \max(|a|, |b|)$; we thus
-  have $X \subseteq [-M, M]$ as expected.  
+  have $X \subseteq [-M, M]$ as expected.
 \end{exo}
 
 \bigskip
@@ -7196,7 +7196,7 @@ exchangeable here, so that showing only one direction will be enough.
     that $L \neq L'$, which is impossible by Proposition 6.6.5. Thus,
     $X$ is closed.
 
-    Furthermore, $X$ is bounded. Indeed, 
+    Furthermore, $X$ is bounded. Indeed,
   \end{itemize}
 \end{exo}
 
@@ -7283,7 +7283,7 @@ exchangeable here, so that showing only one direction will be enough.
     (f \times (g+h))(x) &= f(x) \times (g+h)(x) \\
                         &= f(x) \times (g(x) + h(x)) \\
                         &= f(x)g(x) + f(x)h(x)
-  \end{align*}  
+  \end{align*}
 \end{exo}
 
 \begin{exo}{9.3.1}{Prove Proposition 9.3.9.}
@@ -7328,7 +7328,7 @@ exchangeable here, so that showing only one direction will be enough.
       \exists \epsilon > 0 \, : \, \forall n \geq 0, \exists a_n \in E,
       |a_n - x_0| < \frac{1}{n+1} \text{ and } |f(a_n) - L| > \epsilon
     \end{equation}
-    
+
     Consider this positive real $\epsilon > 0$. Using equation
     \eqref{eq:931c}, we build a sequence\footnote{We ``secretly'' use
       the axiom of choice here.} $\seq{a_n}{0}$ of elements of $E$
@@ -7381,7 +7381,7 @@ exchangeable here, so that showing only one direction will be enough.
     & \Longleftrightarrow \left( \forall \epsilon > 0, \exists \gamma > 0 \,
       : \, x \in \{z \in E \cap ]x_0 - \gamma, x_0 + \gamma[ \}
       \Rightarrow |f(x) - L| < \epsilon \right) \\
-    & \Longleftrightarrow \lim_{x \to x_0 \, ; \, x \in E} f(x) = L 
+    & \Longleftrightarrow \lim_{x \to x_0 \, ; \, x \in E} f(x) = L
   \end{align*}
 \end{exo}
 
@@ -7606,7 +7606,7 @@ exchangeable here, so that showing only one direction will be enough.
   In particular, let's consider the function $f(x) := 1/x$ defined on
   $\rr - \{0\}$. Let be $A > 0$ a positive real number. Then, let be
   $\delta := 1/(A+1) > 0$. For any $x \in ]0, \delta[$, we have
-  $|x-0| = |x| < 1/(A+1)$, i.e. $x < 1/(A+1)$, and thus $1/x > A+1 >
+  $|x-0| = |x| < 1/(A+1)$, i.e., $x < 1/(A+1)$, and thus $1/x > A+1 >
   A$. Thus, $f(0+) = \infty$ according to the above definition.
 
   A similar proof can be given to show that $f(0-) = -\infty$.
@@ -7641,7 +7641,7 @@ exchangeable here, so that showing only one direction will be enough.
 \end{exo}
 
 \begin{exo}{9.7.1}{Prove Corollary 9.7.4.}
-  
+
   Since $f$ is continuous on $[a,b]$, then by the maximum principle
   (Proposition 9.6.7), there exists $x_{max} \in [a,b]$ such that
   $f(x_{max}) = M$, and $x_{min} \in [a,b]$ such that
@@ -7661,7 +7661,7 @@ exchangeable here, so that showing only one direction will be enough.
   Also, we know that for any $y \in f([a,b])$, we have both $y \leq M$
   and $y \geq m$ by definition, so that $f([a,b]) \subseteq [m,M]$.
   And by the result we have just shown, we also know that
-  $[m,M] \subseteq f([a,b])$, thus we are done.  
+  $[m,M] \subseteq f([a,b])$, thus we are done.
 \end{exo}
 
 \bigskip
@@ -7911,7 +7911,7 @@ exchangeable here, so that showing only one direction will be enough.
 \section{Differentiability}
 \begin{exo}{10.1.2}{Prove Proposition 10.1.7.}
 
-  We have to prove the principle of Newton's approximation, i.e. that
+  We have to prove the principle of Newton's approximation, i.e., that
   (a) $f$ is differentiable at $x_0$ iff (b) we have a linear
   approximation of $f$ at $x_0$:
   \begin{equation}
@@ -7956,7 +7956,7 @@ exchangeable here, so that showing only one direction will be enough.
     \]
     Thus, it means that
     ${\lim_{x \to x_0 ; \, x \in X \setminus \{x_0\}} \frac{f(x) - f(x_0)}{x -
-        x_0} = L}$, i.e. that (a) is true.
+        x_0} = L}$, i.e., that (a) is true.
   \end{itemize}
   This shows that (a) $\iff$ (b), as expected.
 \end{exo}
@@ -8151,7 +8151,7 @@ exchangeable here, so that showing only one direction will be enough.
     \delta \Longrightarrow |f(x) - f(x_0)| \leq |L_1|\times |x-x_0| +
     \epsilon|x-x_0|.
   \end{equation}
-  
+
   In particular, since $f$ is differentiable at $x_0$, it is also
   continuous at $x_0$ (Proposition 10.1.10), thus we have
   \begin{equation}
@@ -8188,7 +8188,7 @@ exchangeable here, so that showing only one direction will be enough.
   (painful but more elementary) way. Indeed, the number $(1 + |L_1| +
   |L_2|)$ is positive, and so is $\epsilon$. Thus, by the Archimedean
   principle (Corollary 5.4.13), there exists a positive integer $M$
-  such that $M\epsilon > (1 + |L_1| + |L_2|)$, i.e. such that
+  such that $M\epsilon > (1 + |L_1| + |L_2|)$, i.e., such that
   $\epsilon > (\frac{1}{M} + \frac{1}{M} |L_1| + \frac{1}{M} |L_2|)$.
   And since we have $\frac{1}{M} \geq \frac{1}{M^2}$ for any positive
   integer $M$, then we have $\epsilon > (\frac{1}{M^2} + \frac{1}{M}
@@ -8220,10 +8220,10 @@ exchangeable here, so that showing only one direction will be enough.
     |f(x)-f(x_0)|
   \end{equation}
 
-  This is still quite far from what we want, i.e. equation
+  This is still quite far from what we want, i.e., equation
   \eqref{eq:10.1.7d}. In particular, we still don't have the
   $L_1L_2(x-x_0)$ quantity that we want. One way to overcome this is
-  to force this quantity into the previous equation, i.e. to apply the
+  to force this quantity into the previous equation, i.e., to apply the
   ``middle-man trick'' (see hint of Exercise 10.1.4), and then to
   apply the triangle inequality:
   \begin{align*}
@@ -8263,9 +8263,9 @@ exchangeable here, so that showing only one direction will be enough.
   \begin{equation*}
     |g(f(x)) - g(f(x_0)) - L_2L_1(x-x_0)| \leq \epsilon |x-x_0|
   \end{equation*}
-  
+
   We have thus shown that $g \circ f$ has a Newton's approximation at
-  $x_0$, i.e. that $g \circ f$ is differentiable at $x_0$ and that $(g
+  $x_0$, i.e., that $g \circ f$ is differentiable at $x_0$ and that $(g
   \circ f)'(x_0) = L_2L_1 = g'(f(x_0))f'(x_0)$, as expected.
 \end{exo}
 \bigskip
@@ -8283,7 +8283,7 @@ exchangeable here, so that showing only one direction will be enough.
   $f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}$. Since
   this limit does exist, the left limit and the right limit must match
   (if they don't, a quick proof by contradiction would show that $f$
-  is not differentiable at $x_0$); i.e. we must have:
+  is not differentiable at $x_0$); i.e., we must have:
   \begin{equation*}
     \lim_{x \to x_0; \, x \in ]x_0 - \delta, x_0[} \frac{f(x) -
       f(x_0)}{x - x_0} = \lim_{x \to x_0; \, x \in ]x_0, x_0 + \delta[} \frac{f(x) -
@@ -8349,7 +8349,7 @@ exchangeable here, so that showing only one direction will be enough.
 \bigskip
 
 \begin{exo}{10.2.4}{Prove Theorem 10.2.7.}
-  
+
   We suppose that $g : [a, b] \to \rr$ is a continuous function,
   differentiable on $]a, b[$, and such that $g(a) = g(b)$. We must
   show that there exists an $x \in ]a, b[$ such that $g'(x) = 0$.
@@ -8376,7 +8376,7 @@ exchangeable here, so that showing only one direction will be enough.
     \item If $x_{max} = a$, then $g$ attains a local maximum at $x=a$
       (and thus also at $x=b$). Since $g$ is supposed to be
       non-constant, we have $x_{max} \neq x_{min}$. In particular, we
-      thus have $x_{min} \neq a$ and $x_{min} \neq b$, i.e. $x_{min}
+      thus have $x_{min} \neq a$ and $x_{min} \neq b$, i.e., $x_{min}
       \in ]a,b[$. Using Proposition 10.2.6, the claim follows.
     \end{itemize}
   \end{itemize}
@@ -8422,7 +8422,7 @@ exchangeable here, so that showing only one direction will be enough.
   value theorem to this restriction $f|_{[x,y]}$; it tells us that
   there exists a real number $c \in ]x,y[$ such that $f'(c) =
   \frac{f(x)-f(y)}{x-y}$. But since $f'$ is bounded by $M$, we have
-  $|f'(c)| \leq M$, i.e. $|f(x) - f(y)| \leq M|x-y|$, as expected.
+  $|f'(c)| \leq M$, i.e., $|f(x) - f(y)| \leq M|x-y|$, as expected.
 \end{exo}
 \bigskip
 
@@ -8514,7 +8514,7 @@ exchangeable here, so that showing only one direction will be enough.
 \begin{exo}{10.3.4}{Prove Proposition 10.3.3.}
 
   Let $f : [a,b] \to \rr$ be a differentiable function. We will prove
-  only the first statement, i.e. that if $f'(x) > 0$ for all
+  only the first statement, i.e., that if $f'(x) > 0$ for all
   $x \in [a,b]$, then $f$ is strictly monotone increasing. After that,
   the two other statements can be easily proven in a similar fashion.
 
@@ -8629,7 +8629,7 @@ exchangeable here, so that showing only one direction will be enough.
 
   Thus, since $I_j$ is an element of a partition of $I$, we must have
   $\sup(I_j) \leq b$ (otherwise, if $\sup(I_j) > b$, we could find an
-  element of $I_j$ which is greater than $b$, i.e. an element of $I_j$
+  element of $I_j$ which is greater than $b$, i.e., an element of $I_j$
   that is not an element of $I$, which is not possible in a
   partition).
 
@@ -8797,13 +8797,13 @@ exchangeable here, so that showing only one direction will be enough.
     \end{equation*}
     This shows that we have indeed
     $p.c. \int_I (f+g) = p.c. \int_I f + p.c. \int_I g$.
-    
+
   \item Show that, for any real number $c$, we have $p.c. \int_I (cf)
     = c (p.c. \int_I f)$. The exact same argument applies, replacing
     just Proposition 7.1.11(f) by Proposition 7.1.11(g):
     \[p.c. \int_I (cf) := p.c. \int_{[\P]} (cf) = \sum_{J \in \P}
       (cc_J)|J| = c \sum_{J \in \P} c_J |J| = c \int_{[\P]} f =: c \int_I f\]
-   
+
   \item Show that $p.c.\int_I (f-g) = p.c. \int_I f - p.c. \int_I g$.
     This is a direct consequence of (b), choosing $c=-1$, and then (a).
 
@@ -8812,14 +8812,14 @@ exchangeable here, so that showing only one direction will be enough.
     are positive. Since the lengths $|J|$ are also clearly positive,
     we have immediately $p.c. \int_I f := p.c. \int_{[\P]} f = \sum_{J
       \in \P} c_J |J| \geq 0$, as expected.
-    
+
   \item Show that if $f(x) \geq g(x)$ for all $x \in I$, then $p.c.
     \int_I f \geq \int_I g$. First note that $f(x) \geq g(x)$ iff
     $f(x) - g(x) \geq 0$. Thus, by the previous result (d), we have
     $p.c. \int_I (f-g) \geq 0$. By the previous result (c), this can also
     be written $p.c. \int_I f - p.c. \int_I g \geq 0$. This shows that
     we have indeed $p.c. \int_I f \geq \int_I g$.
-    
+
   \item Show that if $f(x) = c$ for all $x \in I$, then we have $p.c.
     \int_I f = c|I|$. In this case, we $c_J = c$ for all $J \in \P$
     with the previous notations. Thus we have
@@ -8831,7 +8831,7 @@ exchangeable here, so that showing only one direction will be enough.
                     &= c |I| & \text{ (Theorem 11.1.13)}
     \end{align*}
     as expected.
-    
+
   \item Here we have to show that if $J$ is a bounded interval
     containing $I$ and $F : J \to \rr$ is the function defined by
     $F(x) := f(x)$ if $x\in I$ and $f(x) := 0$ if $x\notin I$, then
@@ -8871,7 +8871,7 @@ exchangeable here, so that showing only one direction will be enough.
                     &= p.c. \int_I f &
     \end{align*}
     as expected.
-    
+
   \item We have to show that if $\{J,K\}$ is a partition of $I$ into
     two intervals $J$ and $K$, then the functions $f|_J : J \to \rr$
     and $f|_K : K \to \rr$ are piecewise constant on $J$ and $K$
@@ -8974,7 +8974,7 @@ exchangeable here, so that showing only one direction will be enough.
 \bigskip
 \begin{exo}{11.3.4}{Prove Lemma 11.3.11.}
 
-  We will only prove the first statement of this lemma, i.e. that for
+  We will only prove the first statement of this lemma, i.e., that for
   any piecewise constant function $g$ (w.r.t. a partition $\P$ of $I$)
   that majorizes $f$ on $I$, we have
   \[ p.c. \int_I g \geq U(f, \P) \; ;\]
@@ -8994,7 +8994,7 @@ exchangeable here, so that showing only one direction will be enough.
   nothing but null elements, and lets the whole sum identical.)
 
   Since $g$ majorizes $f$ on $I$, for all $J \in \P$, and for all $x$
-  in this interval $J$, we have $f(x) \leq c_J$, i.e. $f(x) \leq c_J$.
+  in this interval $J$, we have $f(x) \leq c_J$, i.e., $f(x) \leq c_J$.
   In particular,  $c_J \geq \sup_{x \in J} f(x)$ on each interval $J
   \in \P$. Thus we have
   \begin{equation}
@@ -9010,7 +9010,7 @@ exchangeable here, so that showing only one direction will be enough.
 \begin{exo}{11.3.5}{Prove Proposition 11.3.12.}
 
   As for the last exercise, we will only prove the first statement,
-  i.e. that $\supint{f}{I} = \inf \{U(f, \P) : \P \text{ is a
+  i.e., that $\supint{f}{I} = \inf \{U(f, \P) : \P \text{ is a
     partition of } I\}$. The second statement can be proved in a
   similar fashion.
 
@@ -9018,7 +9018,7 @@ exchangeable here, so that showing only one direction will be enough.
   \item First, let's prove that
     $\supint{f}{I} \geq \inf \{U(f, \P) : \P \text{ is a partition of }
     I\}$.
-    
+
     Let be $\P$ any partition of $I$, and $g$ any function piecewise
     constant with respect to $\P$ that majorizes $f$ on $I$. Thus, by
     Lemma 11.3.11 and by definition of an infimum, we have
@@ -9040,7 +9040,7 @@ exchangeable here, so that showing only one direction will be enough.
       &\geq \inf \{\mathbf{U}(f, \P) : \P \text{ partition of } I\},
     \end{align*}
     as expected.
-         
+
   \item Now, let's prove that
     $\supint{f}{I} \leq \inf \{U(f, \P) : \P \text{ is a partition of }
     I\}$.
@@ -9062,7 +9062,7 @@ exchangeable here, so that showing only one direction will be enough.
     \[ \supint{f}{I} \leq \inf \{U(f, \P) \, : \, \P \text{ is a
         partition of } I \}\]
     as expected.
-    
+
   \item Thus, we have $\supint{f}{I} = \inf \{U(f, \P) : \P \text{ is a
     partition of } I\}$, as expected.
   \end{itemize}
@@ -9235,7 +9235,7 @@ exchangeable here, so that showing only one direction will be enough.
       \eqref{eq:11.4.1d} (reversing the inequality ``$\int_I f -
       \epsilon < \int_I \underline{f}$'' as ``$-\int_I f +
       \epsilon > - \int_I \underline{f}$'').
-      
+
       Similarly, we have
       \[- \int_I f - \epsilon < p.c. \int_I \overline{f} \leq \infint{-f}{I}\]
 
@@ -9329,7 +9329,7 @@ exchangeable here, so that showing only one direction will be enough.
       p.c. \int_I \overline{f} &= p.c. \int_J \overline{f}|_J \, +
                                  \, p.c. \int_K \overline{f}|_K \\
       p.c. \int_I \underline{f} &= p.c. \int_J \underline{f}|_J \, +
-                                  \, p.c. \int_K \underline{f}|_K      
+                                  \, p.c. \int_K \underline{f}|_K
     \end{align*}
 
     Substituting this in equation \eqref{eq:11.4.1d}, we obtain
@@ -9418,7 +9418,7 @@ exchangeable here, so that showing only one direction will be enough.
       &\text{ (because $\P = \P' \cup \{(c,b)\}$)}
     \end{align*}
     which closes the induction and shows the property, as expected.
-  \end{itemize} 
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{11.5.1}{Let $a<b$ be real numbers, and let
@@ -9542,7 +9542,7 @@ exchangeable here, so that showing only one direction will be enough.
     \supint{f}{I} - \infint{f}{I} \leq (2+4M)\epsilon.
   \end{equation*}
   Since this is true for all $\epsilon > 0$, it shows that
-  $\supint{f}{I} = \infint{f}{I}$, i.e. that $f$ is Riemann-integrable
+  $\supint{f}{I} = \infint{f}{I}$, i.e., that $f$ is Riemann-integrable
   on $I$, as expected.
 \end{exo}
 
@@ -9574,7 +9574,7 @@ exchangeable here, so that showing only one direction will be enough.
 
   Furthermore, we have clearly
   \[f = \sum_{J \in \P} g_J\]
-  so that, by Theorem 11.4.1(a), $f$ is Riemann-integrable on $I$. 
+  so that, by Theorem 11.4.1(a), $f$ is Riemann-integrable on $I$.
 \end{exo}
 
 \bigskip
@@ -9590,7 +9590,7 @@ exchangeable here, so that showing only one direction will be enough.
 
   Also, we have $f(n) \geq f(x) \geq f(n+1)$ for all $x$ in an
   interval $[n, n+1[$. This motivates the following argument:
-  
+
   \begin{itemize}
   \item Let be $\P := \{[n, n+1[ \, : \, n \in \nn\}$ a partition of
     $[0, +\infty[$.
@@ -9608,7 +9608,7 @@ exchangeable here, so that showing only one direction will be enough.
     We can use Theorem 11.4.1(g) to sum over such intervals, to get:
     \[ \sum_{n=0}^{N-1} f(n) \geq \int_{[0,N[} f \geq
       \sum_{n=0}^{N-1} f(n+1)\]
-    i.e., using Remark 11.4.2, and Lemma 7.1.4, 
+    i.e., using Remark 11.4.2, and Lemma 7.1.4,
     \begin{equation}
       \label{eq:11.6.3}
       \sum_{n=0}^{N-1} f(n) \geq \int_{[0,N]} f \geq \sum_{n=1}^{N} f(n)
@@ -9643,7 +9643,7 @@ exchangeable here, so that showing only one direction will be enough.
     \]
     In particular, we have $f(n) = 0$ for all $n \in \nn$; and
     $\int_{[n, n+1]} f = 1/2$ for all $n \in \nn$. Thus, we clearly
-    have $\sum_{n=0}^\infty f(n) = 0$, i.e. the series converges; but
+    have $\sum_{n=0}^\infty f(n) = 0$, i.e., the series converges; but
     $\sup_{N > 0} \int_{[0,N]} f = \sup_{N>0} N/2 = +\infty$.
   \item Let be the positive function $g : [0, +\infty[ \to \rr$
     defined by:
@@ -9792,7 +9792,7 @@ exchangeable here, so that showing only one direction will be enough.
   \end{align*}
 
   The same argument would show that $p.c. \int_{[\P \# \P']} f \,
-  d\alpha = p.c. \int_{[\P']} f \, d\alpha$, which closes the proof.  
+  d\alpha = p.c. \int_{[\P']} f \, d\alpha$, which closes the proof.
 \end{exo}
 \bigskip
 
@@ -9844,7 +9844,7 @@ exchangeable here, so that showing only one direction will be enough.
   introduce the general notation that $\P$ is a partition of $I$, and
   for all $J \in \P$, $c_J$ and $d_J$ are the constant values on $J$
   of $f$ and $g$ respectively.
-  
+
   \begin{enumerate}[label=(\alph*)]
   \item Let be $\P$ of partition of $I$ such that $f$ and $g$ are both
     piecewise constant with respect to $\P$. (This partition certainly
@@ -10029,7 +10029,7 @@ exchangeable here, so that showing only one direction will be enough.
 \begin{exo}{11.10.1}{Prove Proposition 11.10.1.}
 
   We have to prove here the integration by parts formula.
-  
+
   \begin{itemize}
   \item $F'$ is supposed to be Riemann-integrable on $I = [a,b]$.
     Furthermore, $G$ is continuous on $I$ since it is supposed to be
@@ -10037,7 +10037,7 @@ exchangeable here, so that showing only one direction will be enough.
     Riemann-integrable on $I$. And then, by Theorem 11.4.5, since $G$
     and $F'$ are Riemann-integrable on $I$, then $F'G$ is
     Riemann-integrable on $I$.
-    
+
     Switching the roles of $F$ and $G$, we can show similarly that
     $FG'$ is Riemann-integrable on $I$.
   \item Also, by Theorem 10.1.3, we know that $FG$ is differentiable,
@@ -10083,7 +10083,7 @@ exchangeable here, so that showing only one direction will be enough.
     c_J$. But since this is true for any arbitrary $x \in
     \phi^{-1}(J)$, this means that $c_J$ is the constant value of $f
     \circ \phi$ on $\phi^{-1}(J)$.
-    
+
   \item  $\Q := \{\phi^{-1}(J) : J \in \P\}$ is a partition of $[a,b]$.
 
     First, let be any $x \in [a,b]$. We have $\phi(x) \in [\phi(a),
@@ -10103,7 +10103,7 @@ exchangeable here, so that showing only one direction will be enough.
     Thus, for all $x \in [a,b]$, there exists exactly one $K \in \Q$
     such that $x \in K$, which shows that $\Q$ is a partition of
     $[a,b]$.
-    
+
   \item $f \circ \phi$ is piecewise constant with respect to $\Q$.
 
     Any $K \in \Q$ is of the form $K = \phi^{-1}(J)$, with $J \in \P$.
@@ -10170,7 +10170,7 @@ exchangeable here, so that showing only one direction will be enough.
       \int_{[a,b]} f - \epsilon < p.c. \int_{[a,b]} \underline{f} \leq
       \int_{[a,b]} f \leq p.c. \int_{[a,b]} \overline{f} < \int_{[a,b]} f +
       \epsilon.
-    \end{equation}  
+    \end{equation}
   \item Note that if we define $\overline{g} : [-b,-a] \to \rr$ by
     $\overline{g}(x) := \overline{f}(-x)$, then $\overline{g}$ is
     clearly a piecewise constant (with respect to $\Q$) function that
@@ -10216,14 +10216,14 @@ exchangeable here, so that showing only one direction will be enough.
     $\phi$ is monotone decreasing instead of monotone increasing?}
 
   This analogue could be stated as follows:
-  
+
   Let $[a,b]$ be a closed interval, and let $\phi : [a,b] \to
   [\phi(b), \phi(a)]$ be a differentiable, monotone decreasing
   function, such that $\phi'$ is Riemann integrable. Let $f: [\phi(b),
   \phi(a)] \to \rr$ be a Riemann integrable function on $[\phi(b),
   \phi(a)]$. Then $(f \circ \phi) \phi' : [a,b] \to \rr$ is Riemann
   integrable on $[a,b]$ and
-  
+
   \[\int_{[a,b]}(f\circ \phi) \phi' = -\int_{[\phi(b),\phi(a)]}f \]
 
   To prove it, one just have to adapt the proof in Exercise 11.10.3.

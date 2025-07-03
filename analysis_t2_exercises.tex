@@ -4,7 +4,7 @@
 % General packages:
 \usepackage{a4wide}
 \usepackage[english]{babel}
-\usepackage[utf8]{inputenc} 
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
 \titlelabel{\thetitle.\quad}
@@ -112,7 +112,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $d : X \times X \to [0, \infty)$ be a function. With respect to
     Definition 12.1.2, give an example of a pair $(X,d)$ which...
     \vskip -4mm}
-  
+
   \begin{enumerate}[label=(\alph*)]
   \item obeys the axioms (bcd) but not (a).
 
@@ -131,7 +131,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     Consider the finite set $X := \{1,2,3\}$ and the application $d$
     defined by $d(1,2) = d(2,1) = d(2,3) = d(3,2) := 1$, and
     $d(1,3) = d(3,1) := 5$, and $d(x,x) = 0$ for all $x \in X$.
-  \end{enumerate}  
+  \end{enumerate}
 \end{exo}
 
 \begin{exo}{12.1.4}{Show that the pair $(Y, d|_{Y \times Y})$ deﬁned
@@ -183,7 +183,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
           &= (a_{n+1} b_{n+1})^2 + \left(\sum_{i=1}^{n} a_i
             b_i\right)^2 + 2 (a_{n+1} b_{n+1}) \sum_{i=1}^{n} a_i b_i
       \end{align*}
-      
+
     \item for $B$, we have
       \begin{align*}
         B &:= \frac{1}{2} \sum_{i=1}^{n+1} \sum_{j=1}^{n+1} (a_i
@@ -203,7 +203,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
             b_i)^2 + \sum_{k=1}^{n} (a_kb_{n+1} -
             a_{n+1}b_k)^2
       \end{align*}
-      
+
     \item and thus, for $A + B$, we now use the induction hypothesis (IH)
       to get:
       \begin{align*}
@@ -237,7 +237,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       \end{align*}
       so that the identity is indeed true for all natural number $n$.
     \end{itemize}
-    
+
   \item We can use this identity to prove the Cauchy-Schwarz identity,
     \begin{equation}
       \label{eq:12.1.5b}
@@ -252,7 +252,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       \left(\sum_{j=1}^{n} b_j^2\right)\]
     and thus, taking the square root on both sides, we get
     \eqref{eq:12.1.5b}, as expected.
-    
+
   \item Finally, we can use the Cauchy-Schwarz inequality to prove the
     triangle inequality.
 
@@ -271,7 +271,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \end{align*}
     and, since everything is positive, we get the triangle inequality
     by taking square roots on both sides.
-  \end{enumerate}  
+  \end{enumerate}
 \end{exo}
 
 \begin{exo}{12.1.6}{Show that $(\rr^n , d_{l^2}$) in Example 12.1.6 is
@@ -380,7 +380,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 \begin{exo}{12.1.9}{Show that the pair $(\rr^n, d_{l^\infty})$ in
     Example 12.1.9 is a metric space.}
 
-  Once again, let's show the four axioms of Definition 12.1.2. 
+  Once again, let's show the four axioms of Definition 12.1.2.
 
   \begin{enumerate}[label=(\alph*)]
   \item For all $x \in \rr^n$, we clearly have
@@ -409,7 +409,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       d_{l^\infty}(y,z)\]
     as expected.
   \end{enumerate}
-  Thus, $(\rr^n, d_{l^1})$ is indeed a metric space.  
+  Thus, $(\rr^n, d_{l^1})$ is indeed a metric space.
 \end{exo}
 
 \bigskip
@@ -451,7 +451,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 \begin{exo}{12.1.11}{Show that the discrete metric $(X, \ddisc)$ in
     Example 12.1.11 is indeed a metric space.}
 
-  Once again, let's show the four axioms of Definition 12.1.2. 
+  Once again, let's show the four axioms of Definition 12.1.2.
 
   \begin{enumerate}[label=(\alph*)]
   \item For all $x \in X$, we have
@@ -489,7 +489,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   \end{equation*}
 
   Note that $n$ is a real constant here.
-  
+
   \begin{itemize}
   \item Let's prove that $(a) \implies (b)$. If
     $\lim_{k \to \infty} d_{l^2}(x^{(k)}, x) = 0$, then by the limit
@@ -509,7 +509,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $1 \leq j \leq n$, we have
     $0 \leq |x_j^{k} - x_j| \leq d_{l^\infty}(x^{(k)}, x)$. Still by
     the squeeze test, this implies that
-    $\lim_{k \to \infty} |x_j^{k} - x_j| = 0$, i.e. that
+    $\lim_{k \to \infty} |x_j^{k} - x_j| = 0$, i.e., that
     $(x_j^{k})_{k=m}^\infty$ converges to $x_j$ as $k \to \infty$ (by
     Lemma 12.1.1), as expected.
   \item Finally, let's prove that $(d) \implies (a)$. Using the
@@ -695,7 +695,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
         \seq{a_n}{0}\right) = 0$, or in other words,
       $(x^{(k)})_{k=1}^\infty$ converges to $\seq{a_n}{0}$ w.r.t. the
       metric $d_{l^\infty}$ in $X$.
-      
+
     \item But $(x^{(k)})_{k=1}^\infty$ does not converges to
       $\seq{a_n}{0}$ w.r.t. the metric $d_{l^1}$. Indeed, we have, for
       each given (fixed) $k$,
@@ -744,7 +744,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   gives us
   \[d(x_n, y_n) \leq d(x_n, x) + d(x,y) + d(y, y_n)\]
   but this is only half of what we need to prove the result.
-  
+
   Similarly, we have
   \[d(x, y) \leq d(x, x_n) + d(x_n,y_n) + d(y_n, y)\]
   so that we can combine the previous two inequalities to get
@@ -752,7 +752,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     + d(y_n, y)\]
   i.e.,
   \[|d(x_n, y_n) - d(x, y)| \leq d(x_n, x) + d(y_n, y).\]
-  
+
   Let be $\epsilon > 0$. By hypothesis, there exists a $N_1 \geq 1$
   such that $d(x_n, x) \leq \epsilon/2$ whenever $n \geq N_1$.
   Similarly, there exists a $N_2 \geq 1$ such that $d(y_n, y) \leq
@@ -761,7 +761,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   \[|d(x_n, y_n) - d(x, y)| \leq d(x_n, x) + d(y_n, y) \leq 2
     \epsilon/2 \ leq \epsilon\]
   which shows that $\lim_{n \to \infty} d(x_n, y_n) = d(x, y)$, as
-  expected.    
+  expected.
 \end{exo}
 
 \pagebreak
@@ -791,7 +791,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   \item Let's show that $(a) \implies (b)$. We will use the
     contrapositive, assuming that $x_0$ is neither an interior point
     of $E$, nor a boundary point of $E$. By definition, it means that
-    $x_0$ is an exterior point of $E$, i.e. that there exists $r > 0$
+    $x_0$ is an exterior point of $E$, i.e., that there exists $r > 0$
     such that $B(x_0, r) \cap E = \emptyset$. This is precisely the
     negation of $x_0$ being an adherent point of $E$. Thus, we have
     showed that if $x_0$ is an adherent of of $E$, it is either an
@@ -832,9 +832,9 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 
     Now suppose that $E = \inter(E)$. Let be $x \in E$. We thus have
     $x \in \inter(E)$. By definition, $x$ is thus not a boundary point
-    of $E$, i.e. x $\notin \partial E$. This means that $E \cap
-    \partial E = \emptyset$, i.e. that $E$ is open, as expected.
-    
+    of $E$, i.e., x $\notin \partial E$. This means that $E \cap
+    \partial E = \emptyset$, i.e., that $E$ is open, as expected.
+
   \item Let be $E \subseteq X$. First suppose that $E$ is closed; i.e.
     that $\partial E \subseteq E$. Let be $x \in \adh{E}$. By
     Proposition 12.2.10, we have $\adh{E} = \inter(E) \cup \partial
@@ -843,8 +843,8 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 
     Conversely, suppose that $\adh{E} \subseteq E$. It means that
     $\inter(E) \cup \partial E \subseteq E$, and in particular that
-    $\partial E \subseteq E$, i.e. that $E$ is closed, as expected.
-    
+    $\partial E \subseteq E$, i.e., that $E$ is closed, as expected.
+
   \item Let be $x_0 \in X$, $r > 0$ and $E := B(x_0, r)$. To show that
     $E$ is open, we must show that $E = \inter(E)$ (by Proposition
     1.2.15(a)), and in particular that $E \subseteq \inter(E)$ (the
@@ -880,7 +880,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \end{align*}
     and thus, $a_n \notin B(x_0, r)$, a contradiction. Thus, we must
     have $\ell \in F$, so that $F$ is indeed a closed set.
-    
+
   \item Let be $\{x_0\}$ a singleton with $x_0 \in X$. To show that
     $E$ is closed, we may use Proposition 12.2.15(b), and show that
     $\{x_0\}$ contains all its adherent points. Let be $\seq{a_n}{1}$
@@ -888,7 +888,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     sequence $x_0, x_0, \ldots$. Since it is a constant sequence, its
     limit can only be $x_0$ itself, and this limit belongs to
     $\{x_0\}$. Thus, $\{x_0\}$ is a closed set.
-    
+
   \item First we can form a lemma: for any subset $E \subseteq X$, we
     have $\inter(E) = \ext(X \backslash E)$. This is a direct
     consequence of Definition 12.2.5. Indeed, $x \in \inter(E)$ iff
@@ -919,12 +919,12 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     expected.\footnote{This important result will be used in future
       proofs to turn any statement on closed sets into a statement on
       open sets.}
-    
+
   \item Let $E_1, \ldots, E_n$ be open sets. Thus, for all
     $1 \leq i \leq n$, if $x \in E_i$, there exists a $r_i > 0$ such
     that $B(x, r_i) \subseteq E_i$. Let's define $r := \min(r_1,
     \ldots, r_n)$. We have $B(x, r) \subseteq B(x, r_i) \subseteq E_i$
-    for all $1 \leq i \leq n$, i.e. $B(x,r) \subseteq E_1 \cap \ldots
+    for all $1 \leq i \leq n$, i.e., $B(x,r) \subseteq E_1 \cap \ldots
     \cap E_n$. Thus, $E_1 \cap \ldots \cap E_n$ is an open set.
 
     Also, let $F_1, \ldots, F_n$ be closed sets. By the previous
@@ -937,7 +937,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \backslash (F_1 \cup \ldots \cup F_n)$, and this set is open.
     Thus, by (e), its complementary set, $F_1 \cup \ldots \cup F_n$,
     is closed, as expected.
-    
+
   \item Let $(E_\alpha)_{\alpha \in I}$ be open sets. Suppose that we
     have $x \in \bigcup_{\alpha \in I} E_\alpha$. By definition, there
     exists a $i \in I$ such that $x \in E_i$. Since $E_i$ is an open
@@ -954,7 +954,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     also lies in $F_\alpha$ according to (b). Thus,
     $\ell \in \bigcup_{\alpha \in I} F_\alpha$, so that
     $\bigcap_{\alpha \in I} F_\alpha$ is a closed set, as expected.
-    
+
   \item Let be $E \subseteq X$.
     \begin{itemize}
     \item Let's show that $\inter(E)$ is the largest open set included
@@ -974,7 +974,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 
     \item Similarly, let's show that $\adh{E}$ is the smallest closed
       set that contains $E$. First we show that $\adh{E}$ is closed,
-      i.e. that $\adh{\adh{E}} \subseteq \adh{E}$. (Hint: see Exercise
+      i.e., that $\adh{\adh{E}} \subseteq \adh{E}$. (Hint: see Exercise
       9.1.6 for an intuition.) Let be $x \in \adh{\adh{E}}$. By
       definition, for all $r > 0$,
       $B(x,r) \cap \adh{E} \neq \emptyset$. Thus, there exists
@@ -984,9 +984,9 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       $B(y, \epsilon) \cap E \neq \emptyset$; i.e., there exists
       $z \in B(y, \epsilon) \subseteq B(x,r)$ such that $z \in E$. We
       have showed that whenever $x \in \adh{\adh{E}}$, we have $B(x,r)
-      \cap E \neq \emptyset$ for all $r > 0$, i.e. that $x$ is an
+      \cap E \neq \emptyset$ for all $r > 0$, i.e., that $x$ is an
       adherent point of $E$, as expected. Thus, $\adh{E}$ is closed.
-      
+
       Now we consider a closed set $K$ such that $E \subseteq K$, and
       we have to show that $\adh{E} \subseteq K$. Let be
       $x \in \adh{E}$. By definition, for all $r > 0$, we have
@@ -1022,7 +1022,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     to $d(x,x_0) \leq r$. Thus, $x \in C$.
 
     We have indeed proved that $\adh{B} \subseteq C$.
-    
+
   \item Give an example of a metric space $(X,d)$, a point $x_0$, and
     a radius $r > 0$ such that $\adh{B}$ is \emph{not} equal to $C$.
 
@@ -1066,7 +1066,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \end{itemize}
     Thus, we have indeed $E = K \cap Y$, for some closed subset
     $K \subseteq X$, as expected.
-    
+
   \item Now let's prove the converse implication: suppose that $E = K
     \cap Y$ for some closed subset $K \subseteq X$, and let's prove
     that $E$ is relatively closed w.r.t. $Y$.
@@ -1080,7 +1080,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 
     \begin{itemize}
     \item First suppose that $x \in E$. Since $E = K \cap Y$, we thus
-      have $x \in Y$ and $x \in K$, i.e. $x \notin V$. Thus, $x \in Y
+      have $x \in Y$ and $x \in K$, i.e., $x \notin V$. Thus, $x \in Y
       \backslash V$.
     \item Now suppose that $x \in Y \backslash V$. We thus have
       $x \in X$ (since $Y \subseteq X$) and $x \notin V$, so that we
@@ -1089,7 +1089,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \end{itemize}
     Thus $E = Y \backslash V$ is relatively closed w.r.t. $Y$, as
     expected.
-  \end{itemize}  
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{12.4.1}{Prove Lemma 12.4.3.}
@@ -1108,14 +1108,14 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   By Definition 12.4.1, we know that we have $m \leq n_1 < n_2 < n_3 <
   \ldots$. Thus, as a quick induction would show, we have $n_j \geq m
   + j - 1$ for all $j \geq 1$. Let's take $J := N$. In this case, if
-  $j \geq J$, i.e. if $j \geq N$, we have $n_j \geq m + N - 1 \geq
+  $j \geq J$, i.e., if $j \geq N$, we have $n_j \geq m + N - 1 \geq
   N$. Thus:
-  
+
   \[ j\geq J \implies n_j \geq N \implies d(x^{(n_j)}, x_0)
     \leq \epsilon.\]
 
   Since this is true for all $\epsilon > 0$, it means that
-  $(x^{(n_j)})_{j=1}^\infty$ converges to $x_0$, as expected. 
+  $(x^{(n_j)})_{j=1}^\infty$ converges to $x_0$, as expected.
 \end{exo}
 
 \bigskip
@@ -1133,7 +1133,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   notations from Definition 12.4.1) if we have $1 \leq m \leq n_1 <
   n_2 < n_3 < \ldots$, then a quick induction shows that we have $n_j
   \geq j$ for all $j \geq 1$.
-  
+
   \begin{itemize}
   \item First we prove that (b) implies (a). If some subsequence
     $(x^{(n_j)})_{j=1}^\infty$ converges to $L$, then we have by
@@ -1159,7 +1159,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $n_j := \min \{n > n_{j-1} : d(x^{(n)}, L) \leq 1/j\}$. This set
     is non-empty (by definition of a limit point), so that the
     well-ordering principle (Proposition 8.1.4) ensures that it has a
-    (unique) minimal element, i.e. that $n_j$ indeed exists. Let's
+    (unique) minimal element, i.e., that $n_j$ indeed exists. Let's
     define the subsequence $(x^{(n_j)})_{j=1}^\infty$ obtained
     following this process. We thus have $d(x^{(n_j)}, L) \leq 1/j$
     for all $j \geq 1$, by construction.
@@ -1198,7 +1198,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
                         &< \epsilon
   \end{align*}
   which means that $\seq{x^{(n)}}{m}$ is a Cauchy sequence, as
-  expected.  
+  expected.
 \end{exo}
 
 \bigskip
@@ -1248,7 +1248,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 
   However, the converse is not true. Indeed, consider the sequence
   $\seq{x^{(n)}}{1}$ defined in $(\rr, d)$ by $x^{(1)} = 1$ and
-  $x^{(n)} = 0$ for all $n \geq 2$, i.e. the sequence
+  $x^{(n)} = 0$ for all $n \geq 2$, i.e., the sequence
   $1, 0, 0, 0, \ldots$. It is clear that $L := 1$ is an adherent point
   of $\{x^{(n)} : n \geq 1\}$ (which is just the set $\{0, 1\}$). But
   $1$ is not a limit point of $\seq{x^{(n)}}{1}$, since we have
@@ -1291,7 +1291,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \end{align*}
     Thus, $d(L,L') \leq \epsilon$ for all $\epsilon > 0$, which
     implies $L=L'$.
-  \end{itemize}  
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{12.4.7}{Prove Proposition 12.4.12.}
@@ -1316,11 +1316,11 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 \begin{exo}{12.4.8}{The following construction generalizes the
     construction of the reals from the rationals in Chapter 5. In what
     follows, we let $(X,d)$ be a metric space.}
-  
+
   We have to prove the following statements. Note that this is a
   generalization of the process of construction of the real numbers,
   so that we can use all results relative to the real numbers below.
-  
+
   \begin{enumerate}[label=(\alph*)]
   \item Given any Cauchy sequence $\seq{x^{(n)}}{1}$ in $X$, we denote
     $\formallimit{x_n}$ its formal limit. We say that two formal
@@ -1351,9 +1351,9 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       \geq N_2$. Thus, if $n \geq N := \max(N_1, N_2)$, we have by the
       triangle inequality $d(x_n, z_n) \leq d(x_n, y_n) + d(y_n, z_n)
       \leq \epsilon$. It means that $\lim_{n \to \infty} d(x_n, z_n)$,
-      i.e. that $\formallimit{x_n} = \formallimit{z_n}$, as expected.
+      i.e., that $\formallimit{x_n} = \formallimit{z_n}$, as expected.
     \end{itemize}
-    
+
   \item Let $\adh{X}$ be the space of all formal limits of Cauchy
     sequences in $X$, with the above equality relation. Define a
     metric $d_{\adh{X}} : \adh{X} \times \adh{X} \to \rr^+$ by setting
@@ -1394,7 +1394,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       $(X,d)$ such that $\formallimit z_n = \formallimit x_n$. We must
       show that
       $d_{\adh{X}}(\formallimit z_n, \formallimit y_n) =
-      d_{\adh{X}}(\formallimit x_n, \formallimit y_n)$, i.e. that
+      d_{\adh{X}}(\formallimit x_n, \formallimit y_n)$, i.e., that
       \begin{equation}
         \label{eq:12.4.8b}
         \lim_{n \to \infty} d(z_n, y_n) = \lim_{n \to \infty} d(x_n, y_n)
@@ -1457,7 +1457,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     To prove this statement, consider a Cauchy sequence $\seq{u_n}{1}$
     in $\adh{X}$: we have to prove that this sequence converges in
     $(\adh{X}, d_{\adh{X}})$.
-    
+
     By definition, $\seq{u_n}{1}$ is a Cauchy sequence of formal
     limits of Cauchy sequences that take their values in $X$; i.e.,
     for all $k \geq 1$, there exists a Cauchy sequence
@@ -1529,17 +1529,17 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       This shows that $\seq{u_n}{1} \to L$ in
       $(\adh{X}, d_{\adh{X}})$, which closes the proof.
     \end{itemize}
-    
+
   \item We identify an element $x \in X$ with the corresponding formal
     limit $\formallimit x$ in $\adh{X}$.
     \begin{itemize}
     \item This is legitimate since we have
       $x = y \iff \formallimit x = \formallimit y$.
-        
+
         Indeed, it is clear that if $x = y$, then we have
         $\formallimit x = \formallimit y$ by definition. Conversely,
         if $\formallimit x = \formallimit y$, then we have
-        $\lim_{n \to \infty} d(x,y) = 0$, i.e. $d(x,y) = 0$, i.e.
+        $\lim_{n \to \infty} d(x,y) = 0$, i.e., $d(x,y) = 0$, i.e.
         $x = y$. Thus, this identification is legitimate.
       \item With this identification, we have $d(x,y) =
         d_{\adh{X}}(x,y)$. Indeed:
@@ -1552,16 +1552,16 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       \end{itemize}
       Thus, $(X,d)$ can be thought of as a subspace of
       $(\adh{X}, d_{\adh{X}})$.
-      
+
     \item The closure of $X$ in $\adh{X}$ is $\adh{X}$.
-      
+
       Indeed, let be $C$ the closure of $X$ in $\adh{X}$. We clearly
       have $C \subseteq \adh{X}$, by definition. Thus we just have to show
       that $\adh{X} \subseteq C$.
 
       Let be $x \in \adh{X}$, and let's show that $x \in C$. By
       definition, $x \in C$ means that $x$ is an adherent point of $X$
-      in $\adh{X}$, i.e. that for all $\epsilon > 0$,
+      in $\adh{X}$, i.e., that for all $\epsilon > 0$,
       $B_{(\adh{X}, d_{\adh{X}})}(x, \epsilon) \cap X \neq \emptyset$. In other words, for
       all $\epsilon > 0$, we must show that there exists a
       $y \in X$ such that $d_{\adh{X}}(x,y) < \epsilon$.
@@ -1579,7 +1579,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       \end{align*}
       so that $y := x_N$ is a convenient choice. This shows that $x$
       is an adherent point of $X$ in $\adh{X}$, as expected.
-      
+
     \item Finally, the formal limit agrees with the actual limit,
       i.e., $\lim_{n \to \infty} x_n = \formallimit x_n \in \adh{X}$ for all
       Cauchy sequence $\seq{x_n}{1}$ in $X$.
@@ -1748,7 +1748,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $y \in E$. Since $d$ is the sup norm metric, this implies that
     \[\forall j \in \llbracket 1, n \rrbracket, \,
       |x_{j} - y_{j}| \leq \max_{j = 1, \ldots, n} |x_{j} - y_{j}| := d(x,y) <
-      r.\] Thus, $E_j \subseteq B(x_{j}, r)$, i.e. $E_{j}$ is bounded for all
+      r.\] Thus, $E_j \subseteq B(x_{j}, r)$, i.e., $E_{j}$ is bounded for all
     $1 \leq j \leq n$.
 
     The proof is similar if $d$ is the Euclidean metric, or the
@@ -1788,9 +1788,9 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   One can give the example of the function $\tan^{-1}(x)$ defined on
   the closed set $F := \rr$, but this function has not really been
   defined so far in the book. So, let's use a simpler example.
-  
+
   Consider the closed set $F := [1, +\infty[$ and the function $f(x) =
-  1/x$. We have $f(F) = ]0, 1]$, which is not a closed set.  
+  1/x$. We have $f(F) = ]0, 1]$, which is not a closed set.
 \end{exo}
 
 \pagebreak
@@ -1810,7 +1810,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   so that the $V_n$ clearly constitute an increasing sequence:
   \[V_1 \subseteq V_2 \subseteq V_3 \subseteq \ldots,\]
   so that $\bigcup_{k = 1}^n V_k = V_n$ for all $n \geq 1$.
-  
+
   Furthermore, each set $V_n$ is open in $(K_1, d_{K_1 \times K_1})$, since
   it is the complementary set of a compact (and then closed) set
   (Proposition 12.2.15 (e)).
@@ -1856,7 +1856,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $z \in Z$ (by Proposition 12.2.15(b)). Thus, any sequence of
     elements of $Z$ has a subsequence that converges in $Z$, i.e., $Z$
     is indeed compact.
-    
+
   \item Let be $Y_1, \ldots, Y_n$ be $n$ compact subsets of $X$; we have to
     show that the finite union $Y_1 \cup \ldots \cup Y_n$ is compact. Let's
     use the topological characterization of compact sets: suppose that
@@ -1865,7 +1865,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \[Y_1 \cup \ldots \cup Y_n \subseteq \bigcup_{\alpha \in I} V_\alpha.\]
 
     Clearly, we have $Y_1 \subseteq  \bigcup_{\alpha \in I} V_\alpha$, and since $V_1$ is
-    compact, there exists a finite open cover, i.e. $Y_1 \subseteq  \bigcup_{i =
+    compact, there exists a finite open cover, i.e., $Y_1 \subseteq  \bigcup_{i =
       1}^{s_1} V_{a_i}$. Similarly, there exist finite open covers for
     each other subset $Y_i$, i.e.,
     \begin{align*}
@@ -1877,7 +1877,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \[Y_1 \cup \ldots \cup Y_n \subseteq \bigcup_{\alpha \in \{a_1, \ldots, a_{s_1}, b_1, \ldots, b_{s_2}, \ldots,
         n_1, \ldots, n_{s_n}\}} V_\alpha\]
     so that $Y_1 \cup \ldots \cup Y_n$ is indeed compact.
-    
+
   \item Let be $Y$ a finite subset of $X$; we have to show that $Y$ is
     compact.
 
@@ -1934,7 +1934,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     clear that no subsequence can be a Cauchy sequence either. Thus,
     no subsequence of this sequence can converge in $E$, i.e., $E$ is
     not compact.
-    
+
   \item However, $E$ is a closed subset of $X$. To prove this
     property, consider a convergent sequence of elements of $E$; we
     have to prove that its limit lies in $E$. We've just shown that
@@ -1945,7 +1945,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     it must be eventually equal to $e^{(n_0)}$ for $n_0 \in \nn$, so
     that it necessarily converges to $e^{(n_0)}$, which is an element
     of $E$. This shows that $E$ is closed.
-    
+
   \item Furthermore, $E$ is bounded. To show the boundedness of $E$,
     we have to show that $E \subseteq B_{(X, d_{l^1})}((x_j)_{j=0}^\infty, r)$
     for some $r > 0$ and some sequence $(x_j)_{j=0}^\infty \in X$.
@@ -2003,7 +2003,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     This means that each $(x,y) \in E \times F$ lies in
     $B_{d_{l^2}}\left((a,b), \sqrt{r_1^2 + r_2^2}\right)$. Thus,
     $E \times F$ is indeed bounded.
-    
+
   \item Now let's show that $E \times F$ is closed.
 
     Since $E$ and $F$ are compact, they are themselves closed (by
@@ -2011,7 +2011,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $\seq{(x^{(n)}, y^{(n)})}{1}$ of elements of $E \times F$ which
     converges to $(x_0, y_0)$ with respect to $d_{l^2}$. By
     Proposition 12.1.18, this means that this sequence converges
-    component-wise, i.e. that $\seq{x^{(n)}}{1}$ converges to $x_0$,
+    component-wise, i.e., that $\seq{x^{(n)}}{1}$ converges to $x_0$,
     and $\seq{y^{(n)}}{1}$ converges to $y_0$. By definition, we have
     $x_0 \in E$ and $y_0 \in F$, since $E$ and $F$ are closed. Thus,
     $(x_0, y_0) \in E \times F$. This shows that $E \times F$ is indeed bounded.
@@ -2058,7 +2058,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     whenever $n \geq N$. Since this is true for any arbitrary $\epsilon > 0$,
     this shows that the sequence $\seq{f(x^{(n)})}{1}$ converges to
     $f(x_0)$ with respect to $d_Y$, as expected.
-    
+
   \item Finally, we prove $(b) \implies (a)$. Suppose that
     $\seq{f(x^{(n)})}{1}$ converges to $f(x_0)$ whenever
     $\seq{x^{(n)}}{1}$ converges to $x_0$, and let's show that $f$ is
@@ -2078,7 +2078,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $f(x^{(n)})$ and $f(x_0)$ are never $\epsilon/2$-close. This is a
     contradiction with $(c)$. Thus, $f$ must be continuous at $x_0$,
     as expected.
-  \end{itemize}  
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{13.1.2}{Prove Theorem 13.1.5.}
@@ -2103,7 +2103,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     we have $x \in B_X(x_0, \delta) \implies f(x) \in B_Y(f(x_0), \epsilon) \subseteq V$.
 
     Thus, if we set $r_0 := \delta$, we are done: for all $x \in B_X(x_0,
-    r_0)$, we have $f(x) \in V$, i.e. $x \in f^{-1}(V)$. This shows that
+    r_0)$, we have $f(x) \in V$, i.e., $x \in f^{-1}(V)$. This shows that
     $B_X(x_0, \delta) \subseteq f^{-1}(V)$, and thus that $f^{-1}(V)$ is an open
     set, as expected.
   \item Now we show that $(c) \implies (d)$. By Theorem 12.2.15(e), we
@@ -2136,7 +2136,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 
 \begin{exo}{13.1.3}{Use Theorem 13.1.4 and Theorem 13.1.5 to prove
     Corollary 13.1.7.}
-  
+
   To show (a), consider $\seq{x^{(n)}}{1}$ a sequence of elements of
   $X$ that converges to $x_0 \in X$. Since $f$ is continuous at
   $x_0$, then by Theorem 13.1.4(b), we know that
@@ -2144,12 +2144,12 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   $\seq{f(x^{(n)})}{1}$ is a sequence of elements of $Y$. Since $g$
   is continuous at $f(x_0)$, then still by Theorem 13.1.4(b), we
   know that $\seq{g(f(x^{(n)}))}{1}$ converges to $g(f(x_0)) \in Z$.
-  
+
   Thus, we have proved that for any sequence $\seq{x^{(n)}}{1}$ of
   elements of $X$ that converges to $x_0 \in X$, the sequence $\seq{g
     \circ f(x^{(n)})}{1}$ converges to $g \circ f(x_0)$. This shows that $g \circ
   f$ is continuous at $x_0$, as expected.
-  
+
   Once (a) is proved, the result (b) is clear, since it is just (a)
   at any arbitrary $x_0 \in X$.
 \end{exo}
@@ -2215,7 +2215,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $\iota_{E \to X}$ is continuous.}
 
   Let be $x_0 \in E$ an arbitrary point in $E$, and let be $\epsilon > 0$ a
-  positive real number. Note that we have, for all $x \in E$, 
+  positive real number. Note that we have, for all $x \in E$,
   \[d(\iota_{E \to X}(x_0), \iota_{E \to X}(x)) = d_{E \times E}(x_0, x).\]
 
   Thus, if we take $\delta := \epsilon$ in Definition 13.1.1 of continuity, we are
@@ -2274,7 +2274,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       converges to $x_0$, the sequence $\seq{f \oplus g(x^{(n)})}{1}$
       converges to $(f(x_0), g(x_0)) = f \oplus g (x_0)$. Thus,
       $f \oplus g$ is continuous at $x_0$, by Theorem 13.1.4.
-      
+
     \item Conversely, if $f \oplus g$ is continuous at $x_0$, then for any
       sequence $\seq{x^{(n)}}{1}$ of elements of $X$, the sequence
       $\seq{f \oplus g(x^{(n)})}{1}$ converges to $(f(x_0), g(x_0))$, by
@@ -2312,7 +2312,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   $\seq{x_n, y_n}{1}$ a sequence of elements in
   $\rr \times \rr \setminus\{0\}$ which converges to $(x_0, y_0)$. In the proof
   above, we can indeed apply Proposition 6.1.19(f) since $y_n \neq 0$ for
-  all $n \geq 1$.  
+  all $n \geq 1$.
 \end{exo}
 
 \bigskip
@@ -2324,7 +2324,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   $x \mapsto |x|$. We already know (from Proposition 9.4.12) that the
   function $x \mapsto |x|$ is continuous on $\rr$ (basically because
   $|x| := \max(x, -x)$, and thus is the composition of two continuous
-  functions). Thus, by Corollary 13.1.7, $|f|$ is continuous on $X$.  
+  functions). Thus, by Corollary 13.1.7, $|f|$ is continuous on $X$.
 \end{exo}
 
 \bigskip
@@ -2339,7 +2339,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   Let be a sequence of elements of $\rr^2$, that we will note as
   $\seq{(x_n, y_n)}{1}$, and suppose that this sequence converges to
   $(x_0, y_0) \in \rr^2$. By Proposition 12.1.18, we know that this
-  sequence converges component-wise, i.e. that the sequence of real
+  sequence converges component-wise, i.e., that the sequence of real
   numbers $\seq{x_n}{1}$ converges to $x_0$, and the sequence of real
   numbers $\seq{y_n}{1}$ converges to $y_0$. But we have
   $x_n = \pi_1(x_n, y_n)$, $x_0 = \pi_1(x_0, y_0)$,
@@ -2409,7 +2409,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       f(x_0) &:= (x_1, \ldots, x_m) \\
       g(x_0) &:= (y_1, \ldots, y_m) \\
       f(x^{(k)}) &:= (x^{(k)}_1, \ldots, x^{(k)}_m) \text{ for all } k \geq 1 \\
-      g(x^{(k)}) &:= (y^{(k)}_1, \ldots, y^{(k)}_n) \text{ for all } k \geq 1  
+      g(x^{(k)}) &:= (y^{(k)}_1, \ldots, y^{(k)}_n) \text{ for all } k \geq 1
     \end{align*}
 
     First, note that by Proposition 12.1.18, the sequence
@@ -2427,7 +2427,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \begin{align*}
       f \oplus g (x^{(k)})
       &:= \left(f(x^{(k)}), g(x^{(k)})\right) \\
-      &= \left(x^{(k)}_1, \ldots, x^{(k)}_m, y^{(k)}_1, \ldots, y^{(k)}_n\right) 
+      &= \left(x^{(k)}_1, \ldots, x^{(k)}_m, y^{(k)}_1, \ldots, y^{(k)}_n\right)
     \end{align*}
 
     And since we already know that this sequence converges
@@ -2437,13 +2437,13 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 
     Thus, $f \oplus g$ is continuous at $x_0$. And since this is true for
     any arbitrary $x_0 \in X$, $f \oplus g$ is continuous on $X$.
-    
+
   \item The converse statement is also true; this can also be proved
     in a very similar fashion as Exercise 13.2.1.
   \end{itemize}
 \end{exo}
 
-\begin{exo}{13.2.7}{Let $k \geq 1$, let $I$ be a ﬁnite subset of $\nn^k$,
+\begin{exo}{13.2.7}{Let $k \geq 1$, let $I$ be a finite subset of $\nn^k$,
     and let $c : I \to \rr$ be a function. Form the function $P : \rr^k
     \to \rr$ defined by
     \[P (x_1 , \ldots , x_k) := \sum_{(i_1, \ldots, i_k) \in I} c(i_1 , \ldots , i_k)
@@ -2523,7 +2523,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       \end{align*}
     \end{itemize}
     Thus, $d_{X \times Y}$ is indeed a metric on $X \times Y$.
-    
+
   \item Now we give an analogue of Proposition 12.1.18. Note that $X$
     and $Y$ are ``abstract'' metric spaces here, and $d_X, d_Y$ also
     are ``abstract'' distances, so that we cannot really give an
@@ -2571,11 +2571,11 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
         &< \epsilon
       \end{align*}
       which means that  $\lim_{n \to \infty} d_{X \times Y}((x^{(n)}, y^{(n)}),
-      (x_0, y_0)) = 0$. This is the statement (i).     
+      (x_0, y_0)) = 0$. This is the statement (i).
     \end{proof}
-    
+
   \item Similarly, we can give an analogue for Lemma 13.2.1:
-    
+
     Let be $S$ an arbitrary domain for the functions $f : S \to X$ and
     $g : S \to Y$. Consider the metric spaces $(X, d_X)$, $(Y, d_Y)$ and
     $(X \times Y, d_{X \times Y})$. Then the function
@@ -2668,7 +2668,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   clear that this sequence converges to $(0,0)$. However, we have
   $f(1/n, 1/n) = \frac{1/n^2}{2/n^2} = \frac{1}{2}$. Thus,
   $\seq{f(1/n, 1/n)}{1}$ does not converge to $f(0,0) = 0$, which
-  means that $f$ is not continuous at $(0,0)$.  
+  means that $f$ is not continuous at $(0,0)$.
 \end{exo}
 
 \bigskip
@@ -2745,7 +2745,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     sequence is convergent, it is necessarily bounded. But this is
     a contradiction with the fact that we have $|f(x^{(n_k)})| > n_k \geq
     k$ for all $k \geq 1$. Thus, $f$ must be bounded.
-  \item Now let's prove that $f$ attains its maximum on $X$, i.e. that
+  \item Now let's prove that $f$ attains its maximum on $X$, i.e., that
     there exists a point $x_{max} \in X$ such that $f(x) \leq f(x_{max})$ for
     all $x \in X$. We have shown that $f$ is bounded on $X$, thus there
     exists an $M \in \rr$ such that $M := \sup_{x \in X} f(x)$. By
@@ -2767,10 +2767,10 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
 
     Thus, there indeed exists a $x_{max} \in X$ such that $f(x_{max}) =
     M = \sup_{x \in X} f(x)$, as required.
-    
+
   \item A similar proof would show that $f$ also attains its minimum
     on $X$.
-  \end{itemize}  
+  \end{itemize}
 \end{exo}
 
 \begin{exo}{13.3.3}{Show that every uniformly continuous function is
@@ -2947,7 +2947,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   By definition, there exists at least two elements $x,y \in E$. Thus,
   we have $\{x\} \subseteq E$, and the set $X \setminus \{x\}$ contains at least the
   element $y$, and is thus non empty. In other words, $\{x\}$ is a
-  proper subset of $X$, i.e. $\{x\} \subsetneq X$.
+  proper subset of $X$, i.e., $\{x\} \subsetneq X$.
 
   By Remark 12.2.14, we know that for the discrete metric $\ddisc$,
   every set is both open and closed. Thus, the set $\{x\}$ is a proper
@@ -3006,7 +3006,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   separable into two disjoint open sets), it may seem more natural to
   give a proof by contradiction. Thus, suppose that $f(E)$ is
   \emph{not} connected. In this case, we can split $f(E)$ into two
-  disjoint open (non-empty) sets $V$ and $W$, i.e. we have
+  disjoint open (non-empty) sets $V$ and $W$, i.e., we have
   $f(E) = V \sqcup W$.
 
   \begin{itemize}
@@ -3052,7 +3052,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   also be connected, by Theorem 13.4.6. And since $a,b \in E$, we
   clearly have $f(a), f(b) \in f(E)$, by definition. Recall that we
   suppose here $f(a) \leq f(b)$, and that $f(E) \subseteq \rr$ by definition.
-  
+
   \begin{itemize}
   \item (Trivial case) If $f(a) = f(b)$, then we necessarily have
     $f(a) = y = f(b)$, so that we just have to pick $c := a$ to
@@ -3190,7 +3190,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   \end{enumerate}
 
   Let's prove that (i) and (ii) are equivalent.
-    
+
   \begin{itemize}
   \item First we show that (i) $\implies$ (ii). If
     $\lim_{x \to x_0; x \in E}{f(x)}$ exists, then there exists
@@ -3220,7 +3220,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     Note that this shows both that (i) $\implies$ (ii), and that if
     $\lim_{x \to x_0; x \in E}{f(x)}$ exists at all, then this limit is
     necessarily equal to $f(x_0)$.
-    
+
   \item Now we show that (ii) $\implies$ (i). Let be $\epsilon>0$. Since we
     have (by hypothesis)
     $\lim_{x \to x_0 ; x \in E \setminus \{x_0\}}{f(x)} = f(x_0)$, there exists a
@@ -3366,7 +3366,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   $M \neq 0$, then $f/g$ has limit $L/M$ at $x_0$.
 
   \begin{proof}
-    We just prove the first claim, i.e. that $\lim_{x \to x_0; x \in E}
+    We just prove the first claim, i.e., that $\lim_{x \to x_0; x \in E}
     (f+g)(x) = L+M$, since all the other claims can be proved
     similarly.
 
@@ -3537,7 +3537,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $N = N_0$ and $x = (1/10)^{\frac{1}{N_0+1}}$, we have
     $\frac{x^{N+1}}{1-x} = 1/9 > 0.1$ although $N \geq N_0$. Thus, we do
     not have uniform convergence here.
-    
+
     Finally, if we replace $]-1,1[$ by $[-1,1]$, then $S_N(x)$ does
     not even converge pointwise (see Lemma 7.3.3 when $x=1$ or
     $x=-1$).
@@ -3570,7 +3570,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     function $f : X \to Y$. Suppose that $f$ is a bounded function;
     i.e., there exists a ball $B_{(Y,d_Y)}(y_0, R)$ in $Y$ such that
     $f(x) \in B_{(Y, d_Y)}(y_0, R)$ for all $x \in X$. Show that the
-    sequence $f_n$ is uniformly bounded; i.e. there exists a ball
+    sequence $f_n$ is uniformly bounded; i.e., there exists a ball
     $B_{(Y,d_Y)}(y_0, R)$ in $Y$ such that
     $f_n(x) \in B_{(Y,d_Y)}(y_0, R)$ for all $x \in X$ and all positive
     integers $n$.}
@@ -3579,25 +3579,25 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   $\seq{f_n}{1}$ converges to $f$, there exists $N \geq 1$ such that,
   for all $x \in X$, we have $d_Y(f_n(x), f(x)) < 1$ whenever
   $n > N$.
-  
+
   Furthermore, $f$ is supposed to be bounded. Thus, there exists a
   $y_0 \in Y$ and a real $R > 0$ such that $d_Y(f(x), y_0) < R$ for
   all $x \in X$.
-  
+
   Thus, if $n > N$, we have (by triangle inequality) for all $x \in
   X$,
   \[d_Y(f_n(x), y_0) \leq d_Y(f_n(x), f(x)) + d_Y(f(x), y_0) < 1 + R.\]
   In other words, the sequence $\seq{f_n}{N+1}$ is uniformly bounded.
   Now, we still have to extend this result to the whole sequence
   $\seq{f_n}{1}$.
-  
+
   Recall that each $f_n$ is bounded. Thus, there exists in particular
   a finite sequence of centers
   $y_1, \ldots, y_{N} \in Y$ and a finite sequence of radii
   $R_1, \ldots, R_{N} > 0$ such that, for all $x \in X$,
   \[f_1(x) \in B_Y(y_1, R_1) \; ; \; \ldots
     \; ; \; f_{N}(x) \in B_Y(y_{N}, R_{N}).\]
-  
+
   Let be
   \[
     S := \left(\max_{1 \leq i \leq N} d_Y(y_i, y_0)\right) + \left(\max_{1
@@ -3613,7 +3613,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \\
                      &\leq S.&&
   \end{alignat*}
-  
+
   Thus, we have indeed $d_Y(f_n(x), y_0) < S$ for all $x \in X$ and for
   all $n \geq 1$, which means that $\seq{f_n}{1}$ is uniformly bounded.
 \end{exo}
@@ -3630,7 +3630,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \label{eq:14.3.1a}
     (n > N) \text{ and } (x \in X) \implies d_Y(f^{(n)}(x), f(x)) < \epsilon/3.
   \end{equation}
-  
+
   Furthermore, each function in the sequence $\seq{f^{(n)}}{1}$ is
   continuous at $x_0$. In particular, the function $f^{N+1}$ is
   continuous at $x_0$: there exists a $\delta > 0$ such that
@@ -3739,7 +3739,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \lim_{x \to x_0; x \in E} \lim_{n \to \infty} f^{(n)}(x)
     &= \lim_{x \to x_0; x \in E}{f(x)} = \ell = \lim_{n \to \infty}{\ell_n} \\
     &= \lim_{n \to \infty} \lim_{x \to x_0; x \in E} f^{(n)}(x).
-  \end{align*} 
+  \end{align*}
 \end{exo}
 
 \begin{exo}{14.3.5}{Give an example to show that Proposition 14.3.4
@@ -3825,7 +3825,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     &\leq |f_n(x)| \times |g_n(x) - g(x)| \, + \, |g(x)| \times |f_n(x) - f(x)|.
   \end{align*}
   We can find an upper bound for each term in this expression.
-  
+
   \begin{itemize}
   \item First, $\seq{f_n}{1}$ is uniformly bounded, so that there
     exists a $M_1 \geq 0$ such that $|f_n(x)| \leq M_1$ for all
@@ -3840,7 +3840,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     exists an integer $N_2 \geq 1$ such that
     $|g_n(x) - g(x)| < \epsilon/2M_1$ for all $n > N_2$ and all $x \in \rr$.
   \end{itemize}
-  
+
   Let be $N := \max(N_1, N_2)$. We thus have, for all $x \in \rr$ and
   all $n > N$,
   \begin{align*}
@@ -3886,7 +3886,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     is a distance on $Y$, it satisfies the triangle inequality on
     $Y$: for all ${x \in X}$, we have $d_Y(f(x), h(x)) \leq d_Y(f(x),
     g(x)) + d_Y(g(x), h(x))$.
-    
+
     In particular, for all $x \in X$, we have
     \[
       d_Y(f(x), h(x)) \leq \sup_{X \in X} d_Y(f(x), g(x)) + \sup_{x \in X}
@@ -3908,7 +3908,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $\sum_{i=1}^{n} f^{(i)}$ is also bounded. Prove a similar claim when
     ``bounded'' is replaced by ``continuous''. What if ``continuous''
     was replaced by ``uniformly continuous''?}
-  
+
   Let $F : X \to \rr$ be the finite sum defined by
   $F(x) := \sum_{i=1}^{n} f^{(i)}(x)$.
 
@@ -3929,7 +3929,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       M.
     \]
     The finite sum $F$ is thus bounded (by $M$).
-    
+
   \item Suppose that the functions $f^{(1)}, \ldots, f^{(n)}$ are
     continuous at some point $x_0 \in X$, and let be an arbitrary
     $\epsilon > 0$. By definition, for all $1 \leq i \leq n$, there exists a
@@ -3951,7 +3951,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     $x_0$ was arbitrary, we have the more general result that if
     $f^{(1)}, \ldots, f^{(n)}$ are continuous on $X$, then $F$ is
     continuous on $X$.
-    
+
   \item Similarly, if $f^{(1)}, \ldots, f^{(n)}$ are uniformly continuous
     on $X$, then $F$ is also uniformly continuous on $X$ (The proof is
     almost identical to the previous one.)
@@ -4014,8 +4014,8 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     &= \int_{0}^{1} f(y) \times c \, dy \\
     &= c \int_{-\infty}^{+\infty} f(y) \, dy.
   \end{align*}
-  
-  Thus, the function $f*g$ is indeed constant on $[1,2]$.  
+
+  Thus, the function $f*g$ is indeed constant on $[1,2]$.
 \end{exo}
 \bigskip
 
@@ -4039,13 +4039,13 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
     \[
       \int_{[-\delta, \delta]} g \geq \int_{[-1, 1]} g - (2 - 2\delta) \epsilon \geq 1 - 2 \epsilon.
     \]
-    
+
     Thus, we indeed have the inequalities
     \[
       1 - 2 \epsilon \leq \int_{[-\delta, \delta]} g \leq 1,
     \]
     as expected.
-    
+
   \item First we note that, by Proposition 14.8.11(b), and then by
     Theorem 11.4.1, we have for all $x \in [0,1]$ :
     \begin{align*}
@@ -4089,7 +4089,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
         \end{array}
       \]
     }
-    
+
     Now let's show that $|A| \leq M\epsilon$. Recall that for all
     $x \in \rr$, we have ${-M \leq f(x) \leq M}$; and that for all
     $x \in [\delta, 1]$, we have $g(x) \leq \epsilon$. Thus,
@@ -4097,7 +4097,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
       \leq \int_{[\delta, 1]} f(x-y) g(y) \, dy
       \leq M \int_{[\delta, 1]} g \leq M(1-\delta) \epsilon \leq M \epsilon, \]
     and in particular, $-M \epsilon \leq A \leq M \epsilon$.
-    
+
     A similar proof would also show that $-M \epsilon \leq C \leq M \epsilon$.
 
     Thus, since $f*g(x) := A + B + C$, we can combine the three
@@ -4160,7 +4160,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   Furthermore, since $[0,1]$ is a compact interval, the function $f$
   is bounded, by the maximum principle. There exists a real number $M$
   such that $|f(x)| \leq M$ for all $x \in [0,1]$.
-    
+
   Let be $\epsilon > 0$ a real number, and let be
   $\epsilon' := \epsilon/M$. By the Weierstrass approximation theorem (Corollary
   14.8.19), there exists a polynomial $P : [0,1] \to \rr$ such that
@@ -4203,7 +4203,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
   Let be $x := \vecn{x}$, $y = \vecn{y}$ and $z =
   \vecn{z}$ three elements of $\rr^n$ ; let be $c,d \in \rr$. We will
   just prove here the first three properties of Lemma 6.1.2.
-  
+
   \begin{itemize}
   \item \textit{Commutativity of addition}. We have:
     \begin{align*}
@@ -4214,7 +4214,7 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
             &= \vecn{y} + \vecn{x}\\
             &= y + x.
     \end{align*}
-    
+
   \item \textit{Associativity of addition}. We have:
     \begin{align*}
       (x+y)+z &= (\vecn{x} + \vecn{y}) + \vecn{z} \\
@@ -4224,13 +4224,13 @@ always mean ``Exercise 4.3.3 from \textit{Analysis I}''.
               &= \vecn{x} + (\vecn{y} + \vecn{z}) \\
               &= x + (y+z).
     \end{align*}
-    
+
   \item \textit{Additive identity}. The part $x+0 = 0+x$ comes
     directly from commutativity of addition proved above; and by
     definition,
     \[
       x + 0 = \vecn{x} + (0)_{1 \leq i \leq n} = (x_i+0)_{1 \leq i \leq n} =
-      \vecn{x} = x.\]      
+      \vecn{x} = x.\]
   \end{itemize}
 
   All other properties can be proved similarly from the algebraic
